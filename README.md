@@ -17,4 +17,4 @@ This repository displays cybersecurity projects developed by Napu Dumaran, a PC 
 ## Contact Information
 
 - LinkedIn: [Your LinkedIn URL]
-- Email: [Your Email]
+- Email: napudumaran0313@gmail.com
