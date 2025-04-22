@@ -10,7 +10,7 @@ def check_password_strength(password):
 
     # New: Input validation for empty passwords or spaces
     if not password.strip() or re.search(r"\s", password):
-        feedback.append("Invalid input! Use a strong passphrase without spaces or empty inputs.")
+        feedback.append("Fail. Invalid input. Use a strong passphrase without spaces or empty inputs.")
         return "Invalid", "[Invalid ---]", feedback
     # End of input validation
 
@@ -56,7 +56,7 @@ def check_password_strength(password):
     common_patterns = ["password", "1234", "qwerty"]
     if any(pattern in password.lower() for pattern in common_patterns):
         score -= 1
-        feedback.append("Avoid common words like 'password' or '1234,' try a passphrase instead!")
+        feedback.append("Fail. Avoid common words like 'password' or '1234,' try a passphrase instead")
 
     # New: Check for repeated characters (e.g., "aaa", "111")
     match = re.search(r"(.)\1{2}", password)
