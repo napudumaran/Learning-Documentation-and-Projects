@@ -7,7 +7,7 @@ This repository displays cybersecurity projects developed by Napu Dumaran, a PC 
 - **Password Strength Checker**  
   A Python script to evaluate password strength based on length, complexity, and character types.
   **Preview**: Checks for uppercase, lowercase, numbers, and special characters, rating passwords as Weak, Medium, or Strong.   
-  [View Project](Cybersecurity-Projects/password_checker.py)
+  [View Project](/password_checker.py)
 
 - **Placeholder Project 2**  
   A project to analyze or secure something (to be updated).  
