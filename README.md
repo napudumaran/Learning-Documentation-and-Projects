@@ -2,6 +2,11 @@
 
 This repository displays cybersecurity projects developed by Napu Dumaran, a PC Technician with 3 years of experience at a bank and a CompTIA Security+ certification. I am currently pursuing my Bachelor's degree in Cybersecurity, with 12/120 credits completed.
 
+## TryHackMe Writeups  
+  This folder serves to document my hands-on learning skills in a structured environment using TryHackMe, demonstrating entry level competency in a SOC environment.  
+  [View Writeup](/TryHackMe_Writeup)
+
+
 ## Projects
 
 - **Password Strength Checker**  
