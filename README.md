@@ -12,7 +12,7 @@ This repository displays cybersecurity projects developed by Napu Dumaran, a PC 
 
 - **Placeholder Project 2**  
   A project to analyze or secure something (to be updated).  
-  **Preview**: Work in progress.  
+  Work in progress.  
   [View Project](Projects\Placeholder-2)
 
 ## Contact Information
