@@ -4,10 +4,10 @@ This repository displays cybersecurity projects developed by Napu Dumaran, a PC 
 
 ## Projects
 
-- **Endpoint Hardening Script**  
-  A PowerShell script to secure Windows computers by disabling risky settings.  
-  **Preview**: Disables SMBv1 to prevent malware attacks.  
-  [View Project](Scripts/Endpoint-Hardening)
+- **Password Strength Checker**  
+  A Python script to evaluate password strength based on length, complexity, and character types.
+  **Preview**: Checks for uppercase, lowercase, numbers, and special characters, rating passwords as Weak, Medium, or Strong.
+  [View Project](Scripts/Password-Strength-Checker)
 
 - **Placeholder Project 2**  
   A project to analyze or secure something (to be updated).  
