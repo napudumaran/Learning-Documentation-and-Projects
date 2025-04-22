@@ -61,7 +61,7 @@ def check_password_strength(password):
     # New: Check for repeated characters (e.g., "aaa", "111")
     match = re.search(r"(.)\1{2}", password)
     if match:
-   	 score -= 2
+   	 score -= 1
    	 repeated_char = match.group(1)
    	 feedback.append(f"Fail. Avoid repeating '{repeated_char}' multiple times.")
 
