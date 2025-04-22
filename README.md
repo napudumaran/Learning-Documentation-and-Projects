@@ -4,7 +4,7 @@ This repository displays cybersecurity projects developed by Napu Dumaran, a PC 
 
 ## TryHackMe Writeup 
 
-  This folder serves to document my hands-on learning skills in a structured environment using TryHackMe, demonstrating entry level competency in a SOC environment.  
+- This folder serves to document my hands-on learning skills in a structured environment using TryHackMe, demonstrating entry level competency in a SOC environment.  
   [View Writeup](/TryHackMe_Writeup)
 
 
