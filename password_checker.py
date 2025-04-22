@@ -87,7 +87,7 @@ def main():
     while True:
         password = input("Enter your password: ")
         if not password:
-            print("Exiting...")
+            print("Consider a password manager or passphrase if you haven't done so. Exiting...")
             break
         
         strength, meter, feedback = check_password_strength(password)
