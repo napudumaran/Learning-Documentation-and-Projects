@@ -16,41 +16,41 @@ def check_password_strength(password):
 
     # Check length
     if len(password) < 8:
-        feedback.append("Password too short! Try to think of a passphrase instead!")
+        feedback.append("Fail. Password too short. Try to think of a passphrase instead.")
     elif len(password) >= 12:
         score += 2
-        feedback.append("Great length! 12+ characters is satisfactory.")
+        feedback.append("Pass. 12+ characters is satisfactory.")
     else:
         score += 1
-        feedback.append("Good length, but try for 12+ characters meet security standards. Try using a passphrase.")
+        feedback.append("Fail. Try for 12+ characters to meet security standards. Try using a passphrase instead.")
 
     # Check for uppercase letters
     if re.search(r"[A-Z]", password):
         score += 1
-        feedback.append("Nice! Includes uppercase letters.")
+        feedback.append("Pass. Includes uppercase letters.")
     else:
-        feedback.append("Add uppercase letters to strengthen your password.")
+        feedback.append("Fail. Add uppercase letters to strengthen your password.")
 
     # Check for lowercase letters
     if re.search(r"[a-z]", password):
         score += 1
-        feedback.append("Good job including lowercase letters.")
+        feedback.append("Pass. Includes lowercase letters.")
     else:
-        feedback.append("Include lowercase letters for a stronger password.")
+        feedback.append("Fail. Include lowercase letters.")
 
     # Check for numbers
     if re.search(r"[0-9]", password):
         score += 1
-        feedback.append("Numbers included, satisfactory!")
+        feedback.append("Pass. Numbers included.")
     else:
-        feedback.append("Add numbers to improve password complexity.")
+        feedback.append("Fail. Add numbers to improve password complexity.")
 
     # Check for special characters
     if re.search(r"[!@#$%^&*(),.?\":{}|<>]", password):
         score += 1
-        feedback.append("Special characters detected, satisfactory for password security!")
+        feedback.append("Pass. Special characters detected.")
     else:
-        feedback.append("Include special characters. (e.g., !@#$)")
+        feedback.append("Fail. Include special characters. (e.g., !@#$)")
 
     # Check for common patterns
     common_patterns = ["password", "1234", "qwerty"]
@@ -63,7 +63,7 @@ def check_password_strength(password):
     if match:
    	 score -= 2
    	 repeated_char = match.group(1)
-   	 feedback.append(f"Avoid repeating '{repeated_char}' multiple times, it makes for a weak password.")
+   	 feedback.append(f"Fail. Avoid repeating '{repeated_char}' multiple times.")
 
     # Determine strength and visual meter
     if score >= 6:
