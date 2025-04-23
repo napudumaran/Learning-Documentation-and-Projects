@@ -13,7 +13,7 @@ This repository displays cybersecurity projects developed by Napu Dumaran, a PC 
 - **Password Strength Checker**  
   A Python script that evaluates password strength based on length, character types, common patterns, repeated characters, and input validation for empty or space-containing inputs.
   
-  Follows NIST 800-63B passphrase guidelines and supports NIST 800-53 compliance, demonstrating scripting safe practices, such as such as input validation, and secure password practices for SOC Analyst practices.  
+  Follows NIST 800-63B passphrase guidelines and supports NIST 800-53 compliance, demonstrating scripting safe practices, such as such as input validation, and secure password practices for SOC Analyst operations.  
   
   **Preview**: Checks for uppercase, lowercase, numbers, and special characters, rating passwords as Weak, Medium, or Strong.   
   [View Project](/password_checker.py)
