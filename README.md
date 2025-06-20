@@ -9,7 +9,7 @@ Welcome. I’m a cybersecurity student, PC technician, and father working my way
 ### 🧭 Switching from Windows 11 to Pop!_OS
 Replaced my daily driver OS with Pop!_OS to escape Windows dependency, improve my comfort in Linux, and get hands-on with a modern desktop Linux distro.
 
-[View Notes](/Windows-to-POP_OS)
+[View Notes](notes/Windows-to-POP_OS.md)
 
 
 ---
