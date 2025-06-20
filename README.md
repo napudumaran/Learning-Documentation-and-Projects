@@ -1,24 +1,17 @@
-# Cybersecurity Projects
+# Napu Dumaran - Cybersecurity Projects & Learning Journey
 
-This repository displays cybersecurity projects developed by Napu Dumaran, a PC Technician with 3 years of experience at a bank and a CompTIA Security+ certification. I am currently pursuing my Bachelor's degree in Cybersecurity, with 12/120 credits completed.
+Welcome. I’m a 26-year-old cybersecurity student, PC technician, and father working my way toward technical mastery.
 
-## TryHackMe Writeup 
+Currently rebuilding my technical foundation from the ground up using Arch Linux, virtual machines, and real-world tools.
 
-- This folder serves to document my hands-on learning skills in a structured environment using TryHackMe, demonstrating entry level competency in a SOC environment.  
-  [View Writeup](/TryHackMe_Writeup)
+## 🛠️ Active Projects
 
+### 🐧 Arch Linux Manual Install (VM - Virt-Manager)
+Learning how to install and configure Arch Linux from scratch.
 
-## Projects
+- Learned basic disk partitioning (`cfdisk`, `mkfs`, `mount`)
+- Networking verified via DHCP
+- Disk identified as `vda` using `lsblk`
+- Next step: system install + bootloader config
 
-- **Password Strength Checker**  
-  A Python script that evaluates password strength based on length, character types, common patterns, repeated characters, and input validation for empty or space-containing inputs.
-  
-  Follows NIST 800-63B passphrase guidelines and supports NIST 800-53 compliance, demonstrating scripting safe practices, such as such as input validation, and secure password practices for SOC Analyst operations.  
-  
-  **Preview**: Checks for uppercase, lowercase, numbers, and special characters, rating passwords as Weak, Medium, or Strong.   
-  [View Project](/password_checker.py)
-
-## Contact Information
-
-- LinkedIn: [Your LinkedIn URL]
-- Email: napudumaran0313@gmail.com
+[Notes coming soon]
