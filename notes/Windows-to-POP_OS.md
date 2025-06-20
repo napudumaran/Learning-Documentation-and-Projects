@@ -16,10 +16,10 @@ I wanted to move away from Windows 11 for good and make Linux my daily driver. T
 2. Flashed Pop!_OS ISO to USB using Balena Etcher
 3. Installed Pop!_OS with default partition layout and LUKS encryption
 4. Installed Nvidia-Driver-575 via Pop_Shop! Due to 40 series Nvidia card compatibility
-6. Installed Steam via: sudo apt install steam
+6. Installed Steam and Steam via Flatpak
 7. Mounted the second drive for Steam game installs
 8. Uninstalled firefox and replaced default browser with Brave Browser. 
-9. Deleted the keyring for login on Linux via seahorse application to get my desktop to stop prompting for password on login everytime
+9. Deleted the keyring for login on Linux via seahorse to disable password login.
 
 ## 💥 What Broke / What I Fixed
 - Installing the Nvidia-Driver-575 broke my display, and I had to connect a monitor into the motherboard, boot up a recovery terminal, wipe the corrupted Nvidia driver install from the main OS, reinstall, and reboot. I have to use commands such as chmod.
