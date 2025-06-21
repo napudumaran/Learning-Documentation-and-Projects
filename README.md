@@ -22,7 +22,7 @@ Configured virt-manager and supporting tools to run virtual machines locally for
 ---
 
 ### 🐧 Arch Linux Install (VM)
-Manual Arch install from ISO using the command line
+Manual Arch install and configuration from ISO using the command line
 
 [Notes coming soon]
 
