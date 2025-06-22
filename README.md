@@ -30,5 +30,5 @@ Manual Arch install and configuration from ISO using the command line
 
 ## 📫 Contact
 - **Email:** napudumaran0313@gmail.com
-- **LinkedIn:** linkedin.com/in/napu-dumaran-a3250933b
+- **LinkedIn:** [linkedin.com/in/napu-dumaran-a3250933b](https://www.linkedin.com/in/napu-dumaran-a3250933b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmfNv%2BVJsSSeO%2BsoBMGzW1A%3D%3D)
 
