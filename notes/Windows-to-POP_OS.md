@@ -28,5 +28,4 @@ I wanted to move away from Windows 11 for good and make Linux my daily driver. T
 -Installed compatibilty tools for Steam due to some games not running well on Linux natively. I had to make a special directory via: mkdir -p ~/.steam/root/compatibilitytools.d, on my second driver for Steam games, and then install GE-Proton. I now force combatibility tools for all my games on Steam. I learned those native Windows games use Proton to emulate a Windows environment to work.
 
 ## 🧠 What I Learned
-- Linux has a unique naming scheme for devices unlike Windows. Linux names storage devices based on the actual device type, how many of them are present, and how many times they are partitioned. My fullwriteup can be seen here for NVME SSDs. [Deeper Breakdown](/notes
-/SSD_naming_explained_linux.md)
+- Linux has a unique naming scheme for devices unlike Windows. Linux names storage devices based on the actual device type, how many of them are present, and how many times they are partitioned. My fullwriteup can be seen here for NVME SSDs. [Deeper Breakdown](./notes/SSD_naming_explained_linux.md)
