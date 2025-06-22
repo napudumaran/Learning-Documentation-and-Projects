@@ -14,3 +14,16 @@ bridge-utils provides bridged networking, making it possible for the VM to get a
 
 ovmf provides UEFI firmware, making it possible to boot using UEFI instead of being stuck with legacy BIOS booting.
 
+After everything is installed, it's good practice to enable the libvirtd service to start automatically on boot. This is the service we installed earlier to get Virt-manager to function beyond just a GUI. If we don't do this, we might later get stuck wondering why Virt-Manager isn't working properly. We can do this by running this command.
+- sudo systemctl enable libvirtd
+
+Here’s a breakdown on what each word means in this command line
+- sudo means “super user do” — it gives admin-level permission.
+- systemctl is the startup service manager, similar to Windows’ “Services” tool.
+- enable is the command (verb) that tells systemctl to set libvirtd to launch at boot. 
+
+Now that libvirtd is set to start automatically at boot, we still need to start it immediately so it works without needing a reboot. The command is:
+- sudo systemctl start libvirtd
+
+Everything here is the same as before, except this time we’re telling systemctl to start the service right now instead of waiting until the next reboot.
+
