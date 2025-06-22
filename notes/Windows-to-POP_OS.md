@@ -28,12 +28,5 @@ I wanted to move away from Windows 11 for good and make Linux my daily driver. T
 -Installed compatibilty tools for Steam due to some games not running well on Linux natively. I had to make a special directory via: mkdir -p ~/.steam/root/compatibilitytools.d, on my second driver for Steam games, and then install GE-Proton. I now force combatibility tools for all my games on Steam. I learned those native Windows games use Proton to emulate a Windows environment to work.
 
 ## 🧠 What I Learned
-- Linux has a unique naming scheme for devices unlike Windows. Linux names storage devices based on the actual device type, how many of them are present, and how many times they are partitioned. For example, my NVMe drives show as: nvme0n1p1.
-
-  - nvme signals the type of device: Non-Volatile Memory Express.
-
-  - The 0 portion represents how many of these drives are physically present on the system — this being the first one. If I had another, it would show up as nvme1n1p1, nvme2n1p1, and so on.
-
-  - The n1 portion shows the splitting of the physical drive into functionally separate drives, called namespaces. If I wanted to treat the same drive as multiple separate drives, I could split it and end up with nvme0n2p1, nvme0n3p1, etc., depending on how many times I split it. This could allow for things like dual booting, all from one physical device.
-
-  - Finally, the p1 portion represents the partitions — the separation of function within a single drive or namespace. If you partition your boot, recovery, and root file system, you'll see p1, p2, p3, and so on.
+- Linux has a unique naming scheme for devices unlike Windows. Linux names storage devices based on the actual device type, how many of them are present, and how many times they are partitioned. My fullwriteup can be seen here for NVME SSDs. [Deeper Breakdown](/notes
+/SSD_naming_explained_linux.md)
