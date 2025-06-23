@@ -1,4 +1,4 @@
-# NOTE: When I was creating this writeup on June23rd. 2025, the Valve repository was still online, but the GPG key ring was missing from their server, leading to issues with APT installs via POP_OS's repository, and getting the keyring to install from Steam's repository. I am listing multiple methods for install of Steam, and I may create a flatpak version of a Steam installer.
+NOTE: When I was creating this writeup on June23rd. 2025, the Valve repository was still online, but the GPG key ring was missing from their server, leading to issues with APT installs via POP_OS's repository, and getting the keyring to install from Steam's repository. I am listing multiple methods for install of Steam, and I may create a flatpak version of a Steam installer.
 
 In order to install `steam`, we can typically just run:
 <code>sudo apt install steam</code>
