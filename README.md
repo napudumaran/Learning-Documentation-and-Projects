@@ -28,6 +28,12 @@ Manual Arch install and configuration from ISO using the command line
 
 ---
 
+## Why did I mention I'm going to make my own Kali? 
+- I'll be able to know what every tool does and explain why I chose them and how I use them
+- It won't be bloated
+- I'll keep my version as minimal as possible
+- I'll be able to learn by building, not just using
+
 ## 📫 Contact
 - **Email:** napudumaran0313@gmail.com
 - **LinkedIn:** [linkedin.com/in/napu-dumaran-a3250933b](https://www.linkedin.com/in/napu-dumaran-a3250933b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmfNv%2BVJsSSeO%2BsoBMGzW1A%3D%3D)
