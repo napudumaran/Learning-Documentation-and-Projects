@@ -1,31 +1,11 @@
 # Switching from Windows 11 to Pop!_OS
 
-## 📅 Date
-June 2025
+Edit: I realized that this was a list of what I did and didn't do. I found it boring, uninteresting, and unhelpful to anyone who may or may not want to follow the same switch in the future. I have removed this section since it provided very little value, and I will document everything I did do from here on forth in great detail as to be helpful, rather than just some sort of blog post.
 
-## 🎯 Why I Did This
-I wanted to move away from Windows 11 for good and make Linux my daily driver. The goal was to get comfortable with the terminal and understand how computers work underneath all the Microsoft control and handholding.
+## How I made POP_OS! My new daily driver
+- Installed Steam via an `apt` install. [Notes to come soon]
+- Deleted the login with password prompt via `seahorse` [Might make notes depending on how "complex" it was]
+- How to set a wallpaper for multiple monitors since I can't get wallpaper engine on Steam to work [Notes to come soon]
 
-## 💻 System Details
-- Main desktop PC
-- Used USB flash drive to install Pop!_OS NVIDIA (I am using NVIDIA hardware and need compatibility)
-- Full disk encryption (LUKS)
-
-## 🛠️ What I Did
-1. Backed up key files from Windows
-2. Flashed Pop!_OS ISO using Balena Etcher
-3. Installed Pop!_OS with default partitions and LUKS
-4. Installed nvidia-driver-575 via Pop!_Shop for my 40-series GPU
-5. Installed Steam (via Flatpak) [Deeper Breakdown](to_be_added_later)
-6. Mounted a second drive for game installs
-7. Uninstalled Firefox, installed Brave
-8. Removed login keyring via seahorse to skip password prompt
-9. Mounted my second NVME drive. 
-
-## 💥 What Broke / What I Fixed
-- nvidia-driver-575 broke my display; I had to connect a second monitor to the motherboard, boot into recovery, wipe and reinstall Nvidia drivers manually.
-- Wallpaper Engine didn’t work, so I stretched a custom PNG across both monitors using photo editing tools
--Installed compatibilty tools for Steam due to some games not running well on Linux natively. I had to make a special directory via: mkdir -p ~/.steam/root/compatibilitytools.d, on my second driver for Steam games, and then install GE-Proton. I now force combatibility tools for all my games on Steam. I learned those native Windows games use Proton to emulate a Windows environment to work.
-
-## 🧠 What I Learned
+## What I Learned
 - Linux has a unique naming scheme for devices unlike Windows. Linux names storage devices are based on the actual hardware device type, how many of them are present, and how many times they are partitioned. I use NVME, so my storage shows up as nvme0n1p1. My fullwriteup about nvme naming can be seen in this [Deeper Breakdown](/notes/expanded/NVME_naming_explained_linux.md)
