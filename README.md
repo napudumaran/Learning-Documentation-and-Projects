@@ -1,6 +1,6 @@
 # Napu Dumaran – Cybersecurity Projects & Learning Journey
 
-Welcome. I’m a cybersecurity student, PC technician, and father working my way toward technical mastery. I’m rebuilding my foundation from the ground up using Arch Linux, virtual machines, and real-world tools.
+Welcome. I’m a cybersecurity student, PC technician, and father. I am making the transition to Linux to relearn computers away from a Windows environment, and eventually create my own version of Kali as proof of intermediate level growth.
 
 ---
 
