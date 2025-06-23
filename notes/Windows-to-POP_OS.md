@@ -16,7 +16,7 @@ I wanted to move away from Windows 11 for good and make Linux my daily driver. T
 2. Flashed Pop!_OS ISO using Balena Etcher
 3. Installed Pop!_OS with default partitions and LUKS
 4. Installed nvidia-driver-575 via Pop!_Shop for my 40-series GPU
-5. Installed Steam (via Flatpak)
+5. Installed Steam (via Flatpak) [Deeper Breakdown](to_be_added_later)
 6. Mounted a second drive for game installs
 7. Uninstalled Firefox, installed Brave
 8. Removed login keyring via seahorse to skip password prompt
