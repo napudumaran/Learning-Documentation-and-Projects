@@ -35,7 +35,7 @@ We need to create a folder (directory) for `QEMU` (the engine that emulates CPU,
 <code>/var/lib/libvirt/qemu/</code>
   
 We're going to create a new folder there called "nvram", making the full path:
-<code>/var/lib/libvurt/qemu/nvram</code>
+<code>/var/lib/libvirt/qemu/nvram</code>
   
 NVRAM is a physical chip on real motherboards where UEFI variables are stored. In our case, we’re emulating that with a file using QEMU.
 
