@@ -1,8 +1,10 @@
-NOTE: When I was creating this writeup on June23rd. 2025, the Valve repository was still online, but the GPG key ring was missing from their server, leading to issues with APT installs via POP_OS's repository, and getting the keyring to install from Steam's repository. I am listing multiple methods for install of Steam, and I may create a flatpak version of a Steam installer.
+NOTE: As of June 23rd, 2025, the official Steam GPG key is missing from Valve’s server. The command below is what should allow us to download it:
+<code>cd ~/Downloads && wget https://repo.steampowered.com/steam/archive/stable/steam.gpg</code>
+...but currently results in a 404 error. Valve has not updated their documentation, and this is causing installation failures for new users trying to set up Steam via APT. We will cover multiple ways to install Steam if this kind of issue occurs.
 
 In order to install `steam`, we can typically just run:
 <code>sudo apt install steam</code>
-and we could but finished, but in case POP_OS's repository fails, we can try another way.
+If Pop!_OS’s default method fails, we can add Steam’s repository directly and install it through APT ourselves.
 
 In order to install `Steam` through an `apt` install another way, we will need to get their repository key to download from Valve (the company that made Steam) directly.
 What is a repository key, and why can't we just <code>sudo apt install</code> right now and call it a day?
@@ -18,7 +20,7 @@ This is the breakdown of the command.
 - `cd` means to change directory, or to change the folder we are in.
 - `~` is the shorthand for our home directory. Typically this is home/YourUsernameHere. This is the default home directory for linux users.
 - `&&` treats our `cd` command `wget` as two different commands, so we can run this full line without errors for copy and paste ease
-- `wget` is short for web get. This is a command telling our terminal to download something from the web.
+- `wget` is a tool that downloads files from the web, and people often refer to it as web get. Thats not the name of the tool, but it does make it easier to remember what the command `wget` does.
 - `https://repo.steampowered.com/steam/archive/stable/steam.gpg` is the official GPG key file that valve provides to download their repository key.
 
 All of this will change directory to your downloads file on your user account, and then download that key into it.
