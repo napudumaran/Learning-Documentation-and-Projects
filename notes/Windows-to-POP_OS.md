@@ -3,7 +3,7 @@
 Edit: I realized that this was a list of what I did and didn't do. I found it boring, uninteresting, and unhelpful to anyone who may or may not want to follow the same switch in the future. I have removed this section since it provided very little value, and I will document everything I did do from here on forth in great detail as to be helpful, rather than just some sort of blog post.
 
 ## How I made POP_OS! My new daily driver
-- Installed Steam via an `apt` install. [Notes Here](/expanded/Steam_Install_Explained.md)
+- Installed Steam via an `apt` install. [Notes Here](/notes/expanded/Steam_Install_Explained.md)
 - Deleted the login with password prompt via `seahorse`
 - How to set a wallpaper for multiple monitors since I can't get wallpaper engine on Steam to work [Notes to come soon]
 
