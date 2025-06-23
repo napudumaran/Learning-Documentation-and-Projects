@@ -29,6 +29,17 @@ Now that `libvirtd` is set to start automatically at boot, we still need to star
 
 Everything here is the same as before, except this time we’re telling `systemctl` to start the service right now instead of waiting until the next reboot.
 
+`Libvertd` is a service that needs also needs user permissions to access. This typically means that if we aren't a part of that "group", we won't be able to use the service even though the service is on. We can do that by following this command. 
+<code>sudo usermod -aG libvert $USER</code>
+
+Here's a breakdown on what each word means in this command line that has been covered previously
+- `usermod` is a tool that allows modification of user accounts
+- `-a` means to append, or add onto. Please not that when modifying files, some files are essentially text files. Without appending, or adding onto, you will essentially completely overwrite the previous file.
+- the `G` portion of `-aG` stands for groups. This is the "flag" or option we are modifying for.
+- `$USER` is our current username. This is variable marked with a `$` is configured by linux by default to mean our current username.
+
+Once we finish adding ourselves to the group membership associated with the service `libvertd`, we will need to log out and log back in for the changes to take affect.
+
 Now, we can start grabbing operating systems and setting them up with virt-manager using legacy boot (BIOS). Note that we did install the `ovmf` package in order to emulate UEFI boot, so in order to emulate modern hardware rather than legacy boot, the instructions are as follows.
 
 We need to create a folder (directory) for `QEMU` (the engine that emulates CPU, memory, and storage) to store and write the virtualized UEFI variables to. UEFI needs a writable location because it stores boot entries and settings — just like on a real motherboard. The typical path is as follows.
