@@ -6,7 +6,7 @@ When installing applications, Linux doesn't just install everything in one "pack
 
 `Virt-Manager` is the GUI for managing virtual machines. Without this, everything would be terminal-only.
 
-`libvirt-daemon-system` runs the libvirtd service, which allows VM configuration and interaction through the Virt-Manager GUI.
+`libvirt-daemon-system` runs the `libvirtd` service, which allows VM configuration and interaction through the Virt-Manager GUI.
 
 `qemu-kvm` enables hardware virtualization so VMs can run fast, and also installs the QEMU runtime.
 
@@ -42,7 +42,7 @@ NVRAM is a physical chip on real motherboards where UEFI variables are stored. I
 To create the directory using the terminal, use:
 <code>sudo mkdir -p /var/lib/libvirt/qemu/nvram</code>
   
-Now that we’ve made that empty directory, we need to place a UEFI template file into it so the VM can write to it — just like real UEFI does. Luckily, when we installed the OVMF package, it gave us a default writable UEFI template file:
+Now that we’ve made that empty directory, we need to place a UEFI template file into it — just like real UEFI does. Luckily, when we installed the OVMF package, it gave us a default writable UEFI template file:
 <code>/usr/share/OVMF/OVMF_VARS.fd</code>
   
 We’ll copy that into our new NVRAM directory:
@@ -52,6 +52,3 @@ The command we can use to do this easily is:
 <code>sudo cp /usr/share/OVMF/OVMF_VARS.fd /var/lib/libvirt/qemu/nvram/</code>
   
 Make note of the copied file name — you’ll need it when setting up your VM’s firmware in Virt-Manager (it’ll ask for this when assigning the NVRAM file for UEFI boot).
-
-
-
