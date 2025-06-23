@@ -3,7 +3,7 @@ NOTE: As of June 23rd, 2025, the official Steam GPG key is missing from Valve’
 
 ...but currently results in a 404 error. Valve has not updated their documentation, and this is causing installation failures for new users trying to set up Steam via APT. We will cover multiple ways to install Steam if this kind of issue occurs again in the future.
 
-You can currently just download the steam.gpg file manually from the webpage, save into your `/usr/share/keyrings/` file path, run <code>sudo apt update</code> and then run <code>sudo apt install steam</code> and this will fix the issue now. I will still post the Steam install instructions with the assumption this would NOT work (if though it does work as I just confirmed) for documentation and learning purposes.
+You can currently just download the steam.gpg file manually from the webpage, save into your `/usr/share/keyrings/` file path, run <code>sudo apt update</code> and then run <code>sudo apt install steam</code> and this will fix the issue now. I’m still documenting the full manual method as if the keyring were unavailable — both for educational purposes and in case this workaround breaks again in the future.
 
 ---
 
