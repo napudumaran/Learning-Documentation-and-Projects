@@ -24,18 +24,18 @@ Here’s a breakdown on what each word means in this command line
 - `systemctl` is the startup service manager, similar to Windows’ “Services” tool.
 - `enable` is the command (verb) that tells systemctl to set `libvirtd` to launch at boot. 
 
-`Libvirtd` is a service that needs also needs user permissions to access. This typically means that if we aren't a part of that "group", we won't be able to use the service even though the service is on. We can do that by following this command. 
+`Libvirtd` is a service that also needs user permissions to access. This typically means that if we aren't a part of that "group", we won't be able to use the service even though the service is on. We can give ourselves access by following this command:
 <code>sudo usermod -aG libvirt $USER</code>
 
 Here's a breakdown on what each word means in this command line that has been covered previously
 - `usermod` is a tool that allows modification of user accounts
-- `-a` means to append, or add onto. Please note that when modifying files without appending, or adding onto, you will essentially completely overwrite the previous group configuration.
+- `-a` means to append, or add onto. Please note that without appending, you'll overwrite your previous group membership instead of adding to it.
 - the `G` portion of `-aG` stands for groups. This is the "flag" or option we are modifying for.
-- `$USER` is our current username. This is variable marked with a `$` is configured by linux by default to mean our current username.
+- `$USER` is our current username. `$USER` is a variable. The `$` tells the terminal to grab the value stored in it — which, by default, is your current username.
 
-For verification, we can type in `groups` in our command console, press enter, and see if `libvirt` has been added among our user permissions (also called group membership).
+For verification, we can type in `groups` in our command console, press enter, and see if libvirt has been added to our group membership (which controls our user permissions)..
 
-Once we finish adding ourselves to the group membership associated with the service `libvirtd`, we will need to restart to run the `libvirtd` service, and also for the group membership change to take effect.
+Once we finish adding ourselves to the group membership associated with the service `libvirtd`, we’ll need to restart so the group change takes effect and to ensure the `libvirtd` service is running properly.
 
 Now, we can start grabbing operating systems and setting them up with virt-manager using legacy boot (BIOS). Note that we did install the `ovmf` package in order to emulate UEFI boot, so in order to emulate modern hardware rather than legacy boot, the instructions are as follows.
 
