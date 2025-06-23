@@ -3,10 +3,10 @@ NOTE: As of June 23rd, 2025, the official Steam GPG key is missing from Valve’
 
 ...but currently results in a 404 error. Valve has not updated their documentation, and this is causing installation failures for new users trying to set up Steam via APT. We will cover multiple ways to install Steam if this kind of issue occurs.
 
-In order to install `steam`, we can typically just run:
+On most systems, installing Steam is as simple as:
 <code>sudo apt install steam</code>
 
-If Pop!_OS’s default method fails, we can add Steam’s repository directly and install it through APT ourselves.
+But if Pop!_OS’s default method fails, we can add Steam’s repository directly and install it through APT ourselves.
 
 In order to install `Steam` through an `apt` install another way, we will need to get their repository key to download from Valve (the company that made Steam) directly.
 What is a repository key, and why can't we just <code>sudo apt install</code> right now and call it a day?
