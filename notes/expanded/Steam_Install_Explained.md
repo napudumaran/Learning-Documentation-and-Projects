@@ -13,7 +13,7 @@ To do so we will need a repository key, which is given by steam for users to acc
 These official instructions given by steam can be found at https://repo.steampowered.com/steam/
 
 The command is:
-<code>cd ~/Downloads && wget 
+<code>cd ~/Downloads && wget </code>
 This is the breakdown of the command.
 - `cd` means to change directory, or to change the folder we are in.
 - `~` is the shorthand for our home directory. Typically this is home/YourUsernameHere. This is the default home directory for linux users.
