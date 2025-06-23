@@ -13,11 +13,14 @@ To do so we will need a repository key, which is given by steam for users to acc
 These official instructions given by steam can be found at https://repo.steampowered.com/steam/
 
 The command is:
-<code>cd ~/Downloads && wget </code>
+<code>cd ~/Downloads && wget https://repo.steampowered.com/steam/archive/stable/steam.gpg</code>
 This is the breakdown of the command.
 - `cd` means to change directory, or to change the folder we are in.
 - `~` is the shorthand for our home directory. Typically this is home/YourUsernameHere. This is the default home directory for linux users.
 - `&&` treats our `cd` command `wget` as two different commands, so we can run this full line without errors for copy and paste ease
 - `wget` is short for web get. This is a command telling our terminal to download something from the web.
+- `https://repo.steampowered.com/steam/archive/stable/steam.gpg` is the official GPG key file that valve provides to download their repository key.
+
+All of this will change directory to your downloads file on your user account, and then download that key into it.
 
   
