@@ -7,7 +7,7 @@ Welcome. I’m a cybersecurity student, PC technician, and father. I am making t
 ## Active Projects
 
 ### Switching from Windows 11 to Pop!_OS
-Replaced my daily driver OS with Pop!_OS to escape Windows dependency, improve my comfort in Linux, and get hands-on with a modern desktop Linux distro.
+Replacing my daily driver OS with Pop!_OS to escape Windows dependency, improve my comfort in Linux, and get hands-on with a modern desktop Linux distro.
 
 [View Notes](notes/Windows-to-POP_OS.md)
 
@@ -15,7 +15,7 @@ Replaced my daily driver OS with Pop!_OS to escape Windows dependency, improve m
 ---
 
 ### Setting Up Virt-Manager on Pop!_OS
-Configured virt-manager and supporting tools to run virtual machines locally for testing, lab work, and OS experimentation.
+Configuring virt-manager and supporting tools to run virtual machines locally for testing, lab work, and OS experimentation.
 
 [View Notes](notes/Setting_Up_Virt_Manager.md)
 
