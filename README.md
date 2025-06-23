@@ -17,7 +17,7 @@ Replaced my daily driver OS with Pop!_OS to escape Windows dependency, improve m
 ### 💻 Setting Up Virt-Manager on Pop!_OS
 Configured virt-manager and supporting tools to run virtual machines locally for testing, lab work, and OS experimentation.
 
-[Notes coming soon]
+[View Notes](notes/Setting_Up_Virt_Manager.md)
 
 ---
 
