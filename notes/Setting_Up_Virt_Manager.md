@@ -6,7 +6,7 @@ When installing applications, Linux doesn't just install everything in one "pack
 
 `Virt-Manager` is the GUI for managing virtual machines. Without this, everything would be terminal-only.
 
-`libvirt-daemon-system` runs the `libvirtd` service, which allows VM configuration and interaction through the Virt-Manager GUI.
+`libvirt-daemon-system` runs the `libvirtd` service, which allows VM configuration and interaction through the Virt-Manager GUI. 
 
 `qemu-kvm` enables hardware virtualization so VMs can run fast, and also installs the QEMU runtime.
 
@@ -24,21 +24,18 @@ Here’s a breakdown on what each word means in this command line
 - `systemctl` is the startup service manager, similar to Windows’ “Services” tool.
 - `enable` is the command (verb) that tells systemctl to set `libvirtd` to launch at boot. 
 
-Now that `libvirtd` is set to start automatically at boot, we still need to start it immediately so it works without needing a reboot. The command is:
-<code>sudo systemctl start libvirtd</code>
-
-Everything here is the same as before, except this time we’re telling `systemctl` to start the service right now instead of waiting until the next reboot.
-
-`Libvertd` is a service that needs also needs user permissions to access. This typically means that if we aren't a part of that "group", we won't be able to use the service even though the service is on. We can do that by following this command. 
-<code>sudo usermod -aG libvert $USER</code>
+`Libvirtd` is a service that needs also needs user permissions to access. This typically means that if we aren't a part of that "group", we won't be able to use the service even though the service is on. We can do that by following this command. 
+<code>sudo usermod -aG libvirt $USER</code>
 
 Here's a breakdown on what each word means in this command line that has been covered previously
 - `usermod` is a tool that allows modification of user accounts
-- `-a` means to append, or add onto. Please not that when modifying files, some files are essentially text files. Without appending, or adding onto, you will essentially completely overwrite the previous file.
+- `-a` means to append, or add onto. Please note that when modifying files without appending, or adding onto, you will essentially completely overwrite the previous group configuration.
 - the `G` portion of `-aG` stands for groups. This is the "flag" or option we are modifying for.
 - `$USER` is our current username. This is variable marked with a `$` is configured by linux by default to mean our current username.
 
-Once we finish adding ourselves to the group membership associated with the service `libvertd`, we will need to log out and log back in for the changes to take affect.
+For verification, we can type in `groups` in our command console, press enter, and see if `libvert` has been added among our user permissions (also called group membership).
+
+Once we finish adding ourselves to the group membership associated with the service `libvertd`, we will need to restart to run the `libvertd` service, and also for the group membership change to take effect.
 
 Now, we can start grabbing operating systems and setting them up with virt-manager using legacy boot (BIOS). Note that we did install the `ovmf` package in order to emulate UEFI boot, so in order to emulate modern hardware rather than legacy boot, the instructions are as follows.
 
