@@ -56,7 +56,7 @@ Now that we’ve made that empty directory, we need to place a UEFI template fil
 We’ll copy that into our new NVRAM directory:
 <code>/var/lib/libvirt/qemu/nvram</code>
   
-The command we can use to do this easily is:
+The command we can use is:
 <code>sudo cp /usr/share/OVMF/OVMF_VARS.fd /var/lib/libvirt/qemu/nvram/</code>
   
 Make note of the copied file name — you’ll need it when setting up your VM’s firmware in Virt-Manager (it’ll ask for this when assigning the NVRAM file for UEFI boot).
