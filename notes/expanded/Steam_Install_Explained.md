@@ -10,7 +10,7 @@ What is a repository key, and why can't we just <code>sudo apt install</code> ri
 
 Repositories are centralized storage locations for software packages and metadata. Think of them like software storefronts — similar to Walmart or an app store.
 
-The issue is that repositories aren't always updated for all packages, and things like Steam aren't always up to date. The good news is, in this case we can just go to Steam's hosted repository for their software.
+POP_OS! maintains its own repositories, but sometimes third-party software aren't always up to date. The good news is, in this case we can just go to Steam's hosted repository for their software.
 To do so we will need a repository key, which is given by Steam for users to get access. Think of the key like a membership card — it gives your system permission to “shop” from that repository, just like getting into Costco or Sam’s Club.
 
 The official instructions for adding Valve’s repository are located here: https://repo.steampowered.com/steam/
