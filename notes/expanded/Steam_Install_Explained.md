@@ -24,7 +24,7 @@ This is the breakdown of the command
 - `~` is the shorthand for our home directory. Typically this is home/YourUsernameHere. This is the default home directory for linux users.
 - `&&` runs two commands in sequence — only running the second command `wget` if the first command `cd` succeeds
 - `wget` is a command-line tool used to download files from the web. People often think of it as “web get” — not its official name, but a helpful memory trick.
-- `https://repo.steampowered.com/steam/archive/stable/steam.gpg` is the official GPG key file path that valve provides to download their repository key.
+- `https://repo.steampowered.com/steam/archive/stable/steam.gpg` is the official GPG key file path that Valve provides to download their repository key.
 
 This command changes the current directory to your Downloads folder and downloads the key into it.
 
@@ -32,8 +32,8 @@ Once the keyring is in our Downloads folder, we can then transfer that GPG key i
 <code>sudo mv ~/Downloads/NameOfFileHere /usr/share/keyrings/NameOfFileHere</code>
 
 Here’s a breakdown of the command:
-- `sudo` means super user do. Its the equivalent of doing something with administrative controls.
-- `mv` mv means to move. It can also be used to rename files by moving them to a new location or filename.
+- `sudo` means super user do. It's the equivalent of doing something with administrative controls.
+- `mv` means to move. It can also be used to rename files by moving them to a new location or filename.
 - `/usr/share/keyrings/` is the file path where GPG keys are stored for use.
 
 We will then run:
