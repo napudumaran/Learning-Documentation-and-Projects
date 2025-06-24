@@ -4,7 +4,7 @@ Edit: I originally listed out everything I did and didn’t do, but I realized t
 
 ## How I made POP_OS! My new daily driver
 - Installed Steam via an `apt` install. — [Notes Here](/notes/expanded/Steam_Install_Explained.md)
-- Installed `flatpak` and then installed Spotify — [Notes to come soon](/notes/expanded/Flatpak_Install_Expanded.md)
+- Installed `flatpak` and then installed Spotify — [Notes Here](/notes/expanded/Flatpak_Install_Expanded.md)
 - Deleted the login with password prompt via `seahorse`
 - How to set a wallpaper for multiple monitors since I can't get Wallpaper Engine on Steam to work — [Notes to come soon]
 
