@@ -22,6 +22,17 @@ One thing you’ll notice when installing apps with `flatpak` is that it’s not
 <code>sudo apt install Spotify</code>
 could work, if Spotify existed in the `apt` repository. But `flatpak` uses a different naming convention for its packages.
 
-To install Spotify with `flatpak`, the command is:
+To install Spotify with `flatpak`, use:
 
 <code>flatpak install flathub com.spotify.Client</code>
+
+To launch Spotify after installing it, use:
+
+<code>flatpak run com.spotify.Client</code>
+
+If you want to avoid typing the full name every time, you can create a shortcut (alias). This will let you launch Spotify just like an `apt` install would:
+To assign the alias, use:
+
+<code>alias spotify='flatpak run com.spotify.Client'</code>
+
+Now, you can simply type spotify in the terminal and press Enter.
