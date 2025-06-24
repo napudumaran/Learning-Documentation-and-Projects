@@ -14,3 +14,14 @@ This is the breakdown for the line we are running:
 - `--if-not-exists` is a flag. This tells Flatpak to only add the remote if it hasn’t already been added. It’s like a safeguard.
 - `flathub` is the actual name of the store that flatpak uses.
 - `https://flathub.org/repo/flathub.flatpakrepo` is where the flatpak store is located on the web. It’s a link `flatpak` uses to find and download the app list for `flathub`.
+
+After running the command above, we’ve enabled and downloaded the repository for the `flathub` store, which means we can now install Spotify.
+
+One thing you’ll notice when installing apps with `flatpak` is that it’s not as intuitive as `apt`. For example, something like:
+
+<code>sudo apt install Spotify</code>
+could work, if Spotify existed in the `apt` repository. But `flatpak` uses a different naming convention for its packages.
+
+To install Spotify with `flatpak`, the command is:
+
+<code>flatpak install flathub com.spotify.Client</code>
