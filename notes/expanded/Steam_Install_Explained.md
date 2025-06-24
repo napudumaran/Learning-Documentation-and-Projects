@@ -14,13 +14,15 @@ The issue is that repositories aren't always updated for all packages, and thing
 To do so we will need a repository key, which is given by Steam for users to get access. Think of the key like a membership card — it gives your system permission to “shop” from that repository, just like getting into Costco or Sam’s Club.
 
 The official instructions for adding Valve’s repository are located here: https://repo.steampowered.com/steam/
-But again, the command below currently fails...
-This is the breakdown of the command I had mentioned under the "NOTE:" in the beginning.
+We can use this command to download the GPG key:
+<code>cd ~/Downloads && wget https://repo.steampowered.com/steam/archive/stable/steam.gpg</code>
+
+This is the breakdown of the command
 - `cd` means to change directory, or to change the folder we are in.
 - `~` is the shorthand for our home directory. Typically this is home/YourUsernameHere. This is the default home directory for linux users.
 - `&&` runs two commands in sequence — only running the second command `wget` if the first command `cd` succeeds
 - `wget` is a command-line tool used to download files from the web. People often think of it as “web get” — not its official name, but a helpful memory trick.
-- `https://repo.steampowered.com/steam/archive/stable/steam.gpg` is the official GPG key file that valve provides to download their repository key.
+- `https://repo.steampowered.com/steam/archive/stable/steam.gpg` is the official GPG key file path that valve provides to download their repository key.
 
 All of this will change current directory to your downloads file on your user account, and then download that key into it.
 
