@@ -5,7 +5,7 @@ Edit: I realized that this was a list of what I did and didn't do. I found it bo
 ## How I made POP_OS! My new daily driver
 - Installed Steam via an `apt` install. [Notes Here](/notes/expanded/Steam_Install_Explained.md)
 - Deleted the login with password prompt via `seahorse`
-- How to set a wallpaper for multiple monitors since I can't get wallpaper engine on Steam to work [Notes to come soon]
+- How to set a wallpaper for multiple monitors since I can't get Wallpaper Engine on Steam to work [Notes to come soon]
 
 ## What I Learned
 - Linux has a unique naming scheme for devices unlike Windows. Linux names storage devices are based on the actual hardware device type, how many of them are present, and how many times they are partitioned. I use NVME, so my storage shows up as nvme0n1p1. My fullwriteup about nvme naming can be seen in this [Deeper Breakdown](/notes/expanded/NVME_naming_explained_linux.md)
