@@ -14,6 +14,7 @@ The issue is that repositories aren't always updated for all packages, and thing
 To do so we will need a repository key, which is given by Steam for users to get access. Think of the key like a membership card — it gives your system permission to “shop” from that repository, just like getting into Costco or Sam’s Club.
 
 The official instructions for adding Valve’s repository are located here: https://repo.steampowered.com/steam/
+
 We can use this command to download the GPG key:
 <code>cd ~/Downloads && wget https://repo.steampowered.com/steam/archive/stable/steam.gpg</code>
 
