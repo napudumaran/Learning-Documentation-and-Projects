@@ -2,7 +2,6 @@
 
 Edit: I originally listed out everything I did and didn’t do, but I realized that kind of post is boring and unhelpful. So instead of dumping a log, I’m going to document everything I actually did in detail—focusing on what might help others making the same switch.
 
-## How I made POP_OS! My new daily driver
 - Installed Steam via an `apt` install. — [Notes Here](/notes/expanded/Steam_Install_Explained.md)
 - Installed `flatpak` and then installed Spotify — [Notes Here](/notes/expanded/Flatpak_Install_Expanded.md)
 - Deleted the login with password prompt via `seahorse`
