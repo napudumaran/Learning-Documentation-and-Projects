@@ -48,7 +48,7 @@ We will then save (`Ctrl+O`,`Enter`), exit (`Ctrl+X`), and then apply the change
 Heres a breakdown of everything we used and touched:
 - `nano` is a text editor that runs in our terminal, letting us open and edit files in the terminal itself.
 - `~` is shorthand(shortcut) for your home directory. By default, this means /home/YourUserName
-- The period in front of the `/.bashrc` file marks that this is a hidden file. 
+- The period in front of the `~/.bashrc` file marks that this is a hidden file. 
 - `bashrc` stands for “Bash Runtime Configuration” and is a text file run by the Bash shell every time we open a terminal. That’s why our alias will now automatically load in every new terminal session.
 - `source` is a command that reads a file line by line in the current terminal session. This lets the terminal apply the changes we just made to the `bashrc` file immediately. Technically, we didn’t need to run <code>source ~/.bashrc</code>; we could’ve just opened a new terminal session instead.
 
