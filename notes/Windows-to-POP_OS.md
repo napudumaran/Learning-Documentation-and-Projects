@@ -1,4 +1,4 @@
-# Switching from Windows 11 to Pop!_OS
+# Switching from Windows 11 to Pop!_OS: Making it my new Daily Driver
 
 Edit: I originally listed out everything I did and didn’t do, but I realized that kind of post is boring and unhelpful. So instead of dumping a log, I’m going to document everything I actually did in detail—focusing on what might help others making the same switch.
 
