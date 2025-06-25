@@ -5,6 +5,8 @@ Open a terminal and run:
 
 This will open a GUI, where we can navigate to Desktop > Background, and then either choose a new background or click "Add Picture" in the top right to open the file manager and select our own image.
 
+---
+
 If you have multiple monitors, there's another way to set a wallpaper so that it spans across all monitors, rather than just duplicating on each screen. It's not perfect, but it usually looks better than having the same wallpaper mirrored.
 
 I suggest creating a directory (folder) inside your `Pictures` folder called `Wallpapers`, to store your wallpapers.
@@ -30,6 +32,8 @@ Here's a breakdown of everything we ran in the terminal:
 - `picture-options` is the setting for how the wallpaper is displayed.
 - `spanned` is a personal choice that tells GNOME to stretch one wallpaper across all monitors. You can also use other values like `zoom`, `scaled`, or `centered`.
 
+---
+
 If you ever want to revert back to GNOME’s default wallpaper behavior, run this:
 
 <code>gsettings reset org.gnome.desktop.background picture-uri
@@ -37,3 +41,5 @@ gsettings reset org.gnome.desktop.background picture-uri-dark
 gsettings reset org.gnome.desktop.background picture-options</code>
 
 The new command here — `reset` — just returns a setting back to its default value, like how it was when the OS was first installed.
+
+And thats it.
