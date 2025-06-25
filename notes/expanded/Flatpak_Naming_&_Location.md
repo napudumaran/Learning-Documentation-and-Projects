@@ -19,7 +19,7 @@ This naming conventions leads to:
 
 You can find application IDs by either: 
 - Searching on Flathub.org
-- Using the terminal (Assuming flatpak and flathub are installed) → [Instructions Provided Here](/notes/expanded/Flatpak_Install_Expanded.md)
+- Using the terminal (Assuming flatpak and flathub are installed) → [See setup Instructions](/notes/expanded/Flatpak_Install_Expanded.md)
 
 To search using the Terminal, you can run:
 
@@ -43,9 +43,13 @@ If you want to install the app system-wide (for all users), use `sudo`. For exam
 
 If you're only installing it for yourself, don't use `sudo`. For example:
 
-System level installs (sudo level installs for the system) typically install into: `/var/lib/flatpak/`
+<sudo>flatpak install --user flathub com.spotify.Client</code>
 
-User level installs typically install into: `~/.local/share/flatpak`
+---
+
+Flatpak install locations:
+- System-level installs (`sudo`) typically go to: `/var/lib/flatpak/`
+- User level installs typically go into: `~/.local/share/flatpak`
 
 We can always check where flatpak installs are by running:
 
