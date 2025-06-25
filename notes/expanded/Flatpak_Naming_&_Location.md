@@ -1,4 +1,4 @@
-Flatpak names don't get the traditional naming conventions like `apt` installs do. Instead, they follow a special order similar to reverse domain names. The order looks like this:
+Flatpak names don't follow the traditional naming conventions like `apt` installs do. Instead, they follow a special order similar to reverse domain names. The order looks like this:
 
 `org` or `com` . `vendor` . `AppName` 
 
@@ -8,18 +8,18 @@ Examples of applications I've installed are:
 - `org.mozilla.firefox`
 - `org.gnome.calculator` 
 
-The reasoning behind the naming convention is the same as Android Apps, Java packages, and Gnome naming conventions. They ensure that each application name is unique as to avoid naming conflicts.
+The reasoning behind the naming convention is the same as Android Apps, Java packages, and Gnome naming conventions. They ensure that each application name is unique to avoid naming conflicts.
 
 For example, if multiple applications were named something generic like "calculator" or "editor", it would be unclear which developer or project they belong to. This convention solves that.
 
-The naming conventions leads to:
+This naming conventions leads to:
 - Unique IDs that are easier to parse and identify
 - Isolated configuration directories (so apps don’t rely on shared paths or filenames)
 - Better organization and categorization
 
 You can find application IDs by either: 
 - Searching on Flathub.org
-- Using the terminal(Assuming flatpak and flathub are installed) → [Instructions Provided Here](/notes/expanded/Flatpak_Install_Expanded.md)
+- Using the terminal (Assuming flatpak and flathub are installed) → [Instructions Provided Here](/notes/expanded/Flatpak_Install_Expanded.md)
 
 To search using the Terminal, you can run:
 
@@ -29,7 +29,7 @@ This would show something in the format of:
 
 [Name]  [Description]  [Application ID]  [Version]  [Branch]  [Remotes]
 
-If your terminal is too narrow, some columns will be cut off with ellipses (`…`). To prevent that, you can pipe(run through) the output to `less -S`:
+If your terminal is too narrow, some columns will be cut off with ellipses (`…`). To prevent that, you can pipethe output through `less -S`:
 
 <code>flatpak search AppNameHere | less -S</code>
 
@@ -43,9 +43,9 @@ If you want to install the app system-wide (for all users), use `sudo`. For exam
 
 If you're only installing it for yourself, don't use `sudo`. For example:
 
-System level installs (sudo level installs for the system) typically install into: `var/lib/flatpak/`
+System level installs (sudo level installs for the system) typically install into: `/var/lib/flatpak/`
 
-User level installs typically install into: `/.local/share/flatpak`
+User level installs typically install into: `~/.local/share/flatpak`
 
 We can always check where flatpak installs are by running:
 
