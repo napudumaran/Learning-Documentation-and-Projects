@@ -1,11 +1,11 @@
 # Switching from Windows 11 to Pop!_OS: Making it my new Daily Driver
 
-Edit: I originally listed out everything I did and didn’t do, but I realized that kind of post is boring and unhelpful. So instead of dumping a log, I’m going to document everything I actually did in detail—focusing on what might help others making the same switch.
+Edit: I started by dumping everything I did (and didn’t do), but realized that wasn’t helpful. So instead, I’m documenting only what actually mattered — in detail — with a focus on what might help others switching too.
 
 - Installed Steam via an `apt` install. — [Notes Here](/notes/expanded/Steam_Install_Explained.md)
-- Installed `flatpak` and then installed Spotify — [Notes Here](/notes/expanded/Flatpak_Install_Expanded.md)
-- Deleted the login with password prompt via `seahorse`
-- How to set a wallpaper to span for multiple monitors since I can't get Wallpaper Engine on Steam to work — [Notes Here](/notes/expanded/Setting_Wallpapers.md)
+- IInstalled `flatpak` and used it to install Spotify — [Notes Here](/notes/expanded/Flatpak_Install_Expanded.md)
+- emoved the GNOME Keyring login prompt using `seahorse`
+- Configured wallpaper to span across multiple monitors (Wallpaper Engine wasn’t working) — [Notes Here](/notes/expanded/Setting_Wallpapers.md)
 
 ## What I Learned
 - Linux has a unique naming scheme for devices unlike Windows. Linux names storage devices are based on the actual hardware device type, how many of them are present, and how many times they are partitioned. I use NVME, so my storage shows up as nvme0n1p1. My fullwriteup about nvme naming can be seen in this → [Deeper Breakdown](/notes/expanded/NVME_naming_explained_linux.md)
