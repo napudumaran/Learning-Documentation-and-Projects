@@ -18,7 +18,7 @@ Configuring virt-manager and supporting tools to run virtual machines locally fo
 ---
 
 ### Arch Linux Install (VM)
-Manual Arch install and configuration from ISO using the command line — [Notes coming soon]
+Manual Arch install and configuration from ISO using the command line — [Notes coming soon](/notes/Arch_Linux_Install.md)
 
 ---
 
