@@ -8,16 +8,18 @@ Examples of applications I've installed are:
 - `org.mozilla.firefox`
 - `org.gnome.calculator` 
 
-Thes reasoning behind the naming convention is the same as Android Apps, Java packages, and Gnome naming conventions. They ensure that each application name is unique as to avoid naming conflicts.
+The reasoning behind the naming convention is the same as Android Apps, Java packages, and Gnome naming conventions. They ensure that each application name is unique as to avoid naming conflicts.
 
-For example, if multiple applications had the name "calculator", "gnome", or "editor" in them, there would be confusion on which app is owned by who, which then leads to confusions of what app is owned by who.
+For example, if multiple applications were named something generic like "calculator" or "editor", it would be unclear which developer or project they belong to. This convention solves that.
 
 The naming conventions leads to:
-- unique IDs that are much easier to parse through, and obtain the correct application.
-- its own isolated configuration directory — meaning the system can identify apps without filenames or commmon pathing.
-- easier organization and categorization
+- Unique IDs that are easier to parse and identify
+- Isolated configuration directories (so apps don’t rely on shared paths or filenames)
+- Better organization and categorization
 
-You can find the names of application packages by either using https://flathub.org/ or using the terminal to search. (Assuming flatpak and flathub are installed) → [Instructions Provided Here](/notes/expanded/Flatpak_Install_Expanded.md)
+You can find application IDs by either: 
+- Searching on Flathub.org
+- Using the terminal(Assuming flatpak and flathub are installed) → [Instructions Provided Here](/notes/expanded/Flatpak_Install_Expanded.md)
 
 To search using the Terminal, you can run:
 
@@ -27,19 +29,19 @@ This would show something in the format of:
 
 [Name]  [Description]  [Application ID]  [Version]  [Branch]  [Remotes]
 
-In case your terminal is too small, or cannot be expanded further, information will be cut off when search with the terminal. You can force the terminal to display all output without chop lines by using:
+If your terminal is too narrow, some columns will be cut off with ellipses (`…`). To prevent that, you can pipe(run through) the output to `less -S`:
 
 <code>flatpak search AppNameHere | less -S</code>
 
-This well let you see and cycle through the full output using the left and right arrow keys, uing the `q` key to exit.\
+This allows horizontal scrolling with the left/right arrow keys. Press `q` to exit.
 
-Using the output for the `Application ID`, we can insert that where `AppNameHere` would go and be able to install our application via flatpak.
+Using the output from the `Application ID` field, we can insert that where `AppNameHere` would go and install our application via flatpak.
 
-If we wanted to install the application for all users on the system, we would have to run `sudo`. For example:
+If you want to install the app system-wide (for all users), use `sudo`. For example:
 
 <code>sudo flatpak install com.spotify.Client</code>
 
-If we wanted to install the application for us, the individual user, we can install it without `sudo`.
+If you're only installing it for yourself, don't use `sudo`. For example:
 
 System level installs (sudo level installs for the system) typically install into: `var/lib/flatpak/`
 
