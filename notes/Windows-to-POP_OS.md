@@ -1,7 +1,5 @@
 # Switching from Windows 11 to Pop!_OS: Making my new Daily Driver
 
-Edit: I started by dumping everything I did (and didn’t do), but realized that wasn’t helpful. So instead, I’m documenting only what actually mattered — in detail — with a focus on what might help others switching too.
-
 - Installed Steam via an `apt` install. — [Notes Here](/notes/expanded/Steam_Install_Explained.md)
 - IInstalled `flatpak` and used it to install Spotify — [Notes Here](/notes/expanded/Flatpak_Install_Expanded.md)
 - emoved the GNOME Keyring login prompt using `seahorse`
