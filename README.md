@@ -22,7 +22,7 @@ Manual Arch install and configuration from ISO using the command line — [Notes
 
 ---
 
-## Why did I mention I'm going to make my own Kali? 
+## Why build my own Kali? 
 - I'll be able to know what every tool does and explain why I chose them and how I use them
 - It won't be bloated
 - I'll keep my version as minimal as possible
