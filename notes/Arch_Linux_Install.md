@@ -35,4 +35,4 @@ Click apply
 
 Click begin installation
 
-VM works, and should boot.
+VM works, and should boot, even when restarting the vm for whatever reason. Also should save UEFI boot settings too
