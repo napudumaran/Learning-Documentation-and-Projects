@@ -19,6 +19,8 @@ Once we have our picture(s) stored in the `Wallpapers` directory, we can then po
 
 Running the following in the terminal will set the wallpaper to span:
 
+NOTE: *You will need to set your wallpaper path manually before running the commands provided*
+
 <code>gsettings set org.gnome.desktop.background picture-uri "file://$HOME/Pictures/Wallpapers/YourWallpaperHere.jpg"<br>
 gsettings set org.gnome.desktop.background picture-uri-dark "file://$HOME/Pictures/Wallpapers/YourWallpaperHere.jpg"<br>
 gsettings set org.gnome.desktop.background picture-options "spanned"</code>
