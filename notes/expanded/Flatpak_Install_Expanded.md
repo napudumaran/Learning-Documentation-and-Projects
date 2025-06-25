@@ -31,8 +31,25 @@ To launch Spotify after installing it, use:
 <code>flatpak run com.spotify.Client</code>
 
 If you want to avoid typing the full name every time, you can create a shortcut (alias). This will let you launch Spotify just like an `apt` install would:
-To assign the alias, use:
+To assign the alias, we need to edit our `bashrc` file:
+
+Typically, the file is located at ~/.bashrc, so we can edit it using:
+
+<code>nano ~/.bashrc</code>
+
+and then adding this line all the way at the bottom of the file:
 
 <code>alias spotify='flatpak run com.spotify.Client'</code>
 
-Now, you can simply type spotify in the terminal and press Enter.
+We will then save (`Ctrl+O`,`Enter`), exit (`Ctrl+X`), and then apply the change for our current terminal session using:
+
+<code>source ~/.bashrc</code>
+
+Heres a breakdown of everything we used and touched:
+- `nano` is a text editor that runs in our terminal, letting us open and edit files in the terminal itself.
+- `~` is shorthand(shortcut) for your home directory. By default, this means /home/YourUserName
+- The period in front of the `/.bashrc` file marks that this is a hidden file. 
+- `bashrc` stands for “Bash Runtime Configuration” and is a text file run by the Bash shell every time we open a terminal. That’s why our alias will now automatically load in every new terminal session.
+- `source` is a command that reads a file line by line in the current terminal session. This lets the terminal apply the changes we just made to the `bashrc` file immediately. Technically, we didn’t need to run <code>source ~/.bashrc</code>; we could’ve just opened a new terminal session instead.
+
+With all of these changes made, we can now open up Spotify just like an `apt` install, using the terminal.
