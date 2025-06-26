@@ -1,3 +1,5 @@
+# Flatpak Application Names and Install Locations explained
+
 Flatpak names don't follow the traditional naming conventions like `apt` installs do. Instead, they follow a special order similar to reverse domain names. The order looks like this:
 
 `org` or `com` . `vendor` . `AppName` 
