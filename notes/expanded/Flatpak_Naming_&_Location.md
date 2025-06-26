@@ -23,7 +23,9 @@ You can find application IDs by either:
 
 To search using the Terminal, you can run:
 
-<code>flatpak search AppNameHere</code>
+```bash
+flatpak search AppNameHere
+```
 
 This would show something in the format of:
 
@@ -31,7 +33,9 @@ This would show something in the format of:
 
 If your terminal is too narrow, some columns will be cut off with ellipses (`…`). To prevent that, you can pipethe output through `less -S`:
 
-<code>flatpak search AppNameHere | less -S</code>
+```bash
+flatpak search AppNameHere | less -S
+```
 
 This allows horizontal scrolling with the left/right arrow keys. Press `q` to exit.
 
@@ -39,12 +43,15 @@ Using the output from the `Application ID` field, we can insert that where `AppN
 
 If you want to install the app system-wide (for all users), use `sudo`. For example:
 
-<code>sudo flatpak install com.spotify.Client</code>
+```bash
+sudo flatpak install com.spotify.Client
+```
 
 If you're only installing it for yourself, don't use `sudo`. For example:
 
-<sudo>flatpak install --user flathub com.spotify.Client</code>
-
+```bash
+flatpak install --user flathub com.spotify.Client
+```
 ---
 
 Flatpak install locations:
@@ -53,9 +60,13 @@ Flatpak install locations:
 
 We can always check where flatpak installs are by running:
 
-<code>flatpak list --user<br>
-flatpak list --system</code>
+```bash
+flatpak list --user
+flatpak list --system
+```
 
 or 
 
-<code>flatpak list --all</code>
+```bash
+flatpak list --all
+```
