@@ -12,7 +12,9 @@ If you have multiple monitors, there's another way to set a wallpaper so that it
 I suggest creating a directory (folder) inside your `Pictures` folder called `Wallpapers`, to store your wallpapers.
 Run this in your terminal:
 
-<code>mkdir ~/Pictures/Wallpapers</code>
+```bash
+mkdir ~/Pictures/Wallpapers
+```
 - `mkdir` means "make directory," or create a new folder. If the directory does not already exist, this will create a folder named `Wallpapers`.
 
 Once we have our picture(s) stored in the `Wallpapers` directory, we can then point to that picture when setting it for our wallpaper.
@@ -21,9 +23,11 @@ Running the following in the terminal will set the wallpaper to span:
 
 NOTE: *You will need to set your wallpaper path manually before running the commands provided*
 
-<code>gsettings set org.gnome.desktop.background picture-uri "file://$HOME/Pictures/Wallpapers/YourWallpaperHere.jpg"<br>
-gsettings set org.gnome.desktop.background picture-uri-dark "file://$HOME/Pictures/Wallpapers/YourWallpaperHere.jpg"<br>
-gsettings set org.gnome.desktop.background picture-options "spanned"</code>
+```bash
+gsettings set org.gnome.desktop.background picture-uri "file://$HOME/Pictures/Wallpapers/YourWallpaperHere.jpg"
+gsettings set org.gnome.desktop.background picture-uri-dark "file://$HOME/Pictures/Wallpapers/YourWallpaperHere.jpg"
+gsettings set org.gnome.desktop.background picture-options "spanned"
+```
 
 Here's a breakdown of everything we ran in the terminal:
 - `gsettings` is a command-line tool that lets us read and write application settings in GNOME's configuration system. This is the non-GUI way of configuring settings.
@@ -38,9 +42,11 @@ Here's a breakdown of everything we ran in the terminal:
 
 If you ever want to revert back to GNOME’s default wallpaper behavior, run this:
 
-<code>gsettings reset org.gnome.desktop.background picture-uri
+```bash
+gsettings reset org.gnome.desktop.background picture-uri
 gsettings reset org.gnome.desktop.background picture-uri-dark
-gsettings reset org.gnome.desktop.background picture-options</code>
+gsettings reset org.gnome.desktop.background picture-options
+```
 
 The new command here — `reset` — just returns a setting back to its default value, like how it was when the OS was first installed.
 
