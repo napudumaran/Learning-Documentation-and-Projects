@@ -11,4 +11,4 @@
 - `flatpak` applications use a different naming convention compared to apt installs, and they also follow different directory paths when installed. I’ve written a short explanation of how Flatpak names its apps and where they get installed. → [Deeper Breakdown](/notes/expanded/Flatpak_Naming_&_Location.md)
 - `Shift` + `Ctrl` + `U` (Unicode) lets me do things like insert arrows `→` (u2192), em dashes `—` (u2014), bullet points `•` (u2022) and more for typographic styling and readability on Github, webpages, and Linux OSs.
 - How torrents differ from HTML downloads, what torrent I downloaded, and how I used → [Deeper Breakdown](/notes/expanded/HTML&Torrents_HowTo.md)
-- Using the terminal to manage my audio devices, and ensure they're using the correct quality mode — [Deeper Breakdown — Unfinished](/notes/expanded/Managing_and_Controlling_Audio.md)
+- Using the terminal to manage my audio devices, and ensure they're using the correct quality mode → [Deeper Breakdown — Unfinished](/notes/expanded/Managing_and_Controlling_Audio.md)
