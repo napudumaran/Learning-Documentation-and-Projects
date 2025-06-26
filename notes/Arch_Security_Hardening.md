@@ -10,7 +10,7 @@ This is good information to know. — [Notes Here — Rough Draft](/notes/expand
 
 ---
 
-Bonus setup for accessing VM terminal from home terminal — [Notes Here — Rough Draft](
+Bonus setup for accessing VM terminal from home terminal — [Notes Here — Rough Draft](/notes/expanded/security/Setting_Up_sshd_Arch.md)
 
 ---
 
