@@ -49,6 +49,7 @@ fdisk /dev/vda > d -delete partition > 2 -delete root > n -new partition > 2 -ro
 
 Format both 2nd and 3rd partitions for file system ext4
 mkfs.ext4 /dev/vda2 and mkfs.ext4 /dev/vda3
+
 ---
 
 safe to save and reboot here, do not reboot until next checkpoint after this
