@@ -8,4 +8,10 @@ This is good information to know. — [Notes Here — Rough Draft](/notes/expand
 - Install auditing package. Good information to know. Not critical for VM or Arch Install. 
 This is good information to know. — [Notes Here — Rough Draft](/notes/expanded/security/Arch_Audit_Install.md)
 
+---
+
+Bonus setup for accessing VM terminal from home terminal — [Notes Here — Rough Draft](
+
+---
+
 - Review and disable unnecessary services or unused services – [Notes Here — Rough Draft]
