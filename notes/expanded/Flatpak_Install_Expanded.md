@@ -1,12 +1,15 @@
 The packaging tool apt doesn’t include Spotify in Pop!_OS’s default repository. This means that we will have to look at another installer to get Spotify. Fortunately, `flatpak` is able to be installed via `apt`.
 The command to install flatpak is
-<code>sudo apt install flatpak</code>
+```bash
+sudo apt install flatpak
+```
 
 After installing `flatpak`, we will then need to enable the `flathub` repository, which is basically the Flatpak version of an app store—just like how apt pulls from Ubuntu or Pop!_OS repos. 
 
 `flathub` is disabled by default, so to enable we will run:
-
-<code>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo</code>
+```bash
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
 
 This is the breakdown for the line we are running:
 - `flatpak` is the name of the tool we installed, so now we are commanding it to do something by calling on it
@@ -19,31 +22,43 @@ After running the command above, we’ve enabled and downloaded the repository f
 
 One thing you’ll notice when installing apps with `flatpak` is that it’s not as intuitive as `apt`. For example, something like:
 
-<code>sudo apt install Spotify</code>
+```bash
+sudo apt install Spotify
+```
 could work, if Spotify existed in the `apt` repository. But `flatpak` uses a different naming convention for its packages.
 
 To install Spotify with `flatpak`, use:
 
-<code>flatpak install flathub com.spotify.Client</code>
+```bash
+flatpak install flathub com.spotify.Client
+```
 
 To launch Spotify after installing it, use:
 
-<code>flatpak run com.spotify.Client</code>
+```bash
+flatpak run com.spotify.Client
+```
 
 If you want to avoid typing the full name every time, you can create a shortcut (alias). This will let you launch Spotify just like an `apt` install would:
 To assign the alias, we need to edit our `bashrc` file:
 
 Typically, the file is located at ~/.bashrc, so we can edit it using:
 
-<code>nano ~/.bashrc</code>
+```bash
+nano ~/.bashrc
+```
 
 and then adding this line all the way at the bottom of the file:
 
-<code>alias spotify='flatpak run com.spotify.Client'</code>
+```bash
+alias spotify='flatpak run com.spotify.Client'
+```
 
 We will then save (`Ctrl+O`,`Enter`), exit (`Ctrl+X`), and then apply the change for our current terminal session using:
 
-<code>source ~/.bashrc</code>
+```bash
+source ~/.bashrc
+```
 
 Heres a breakdown of everything we used and touched:
 - `nano` is a text editor that runs in our terminal, letting us open and edit files in the terminal itself.
