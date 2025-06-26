@@ -18,4 +18,4 @@ For example:
 | systemd-userdbd.socket             | enabled | enabled  | Needed for systemd service        |
 | remote-fs.target                   | enabled | enabled  | Used for mounting drives          |
 
-
+Currently knowing how to see running services is good knowledge, but everything is currently safe for a bare bones arch setup.
