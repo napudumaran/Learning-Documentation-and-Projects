@@ -10,4 +10,5 @@ Partitioning for Boot, Root, and Home. — [View Notes — Rough Draft](/notes/e
 
 Installing the Base System — [View Notes — Rough Draft](/notes/expanded/Arch_Linux_Base.md)
 
-Security Hardening — [View Notes — Rough Draft]
+Security Hardening — [View Notes — Rough Draft](/notes/Arch_Security_Hardening.md)
+
