@@ -49,12 +49,17 @@ fdisk /dev/vda > d -delete partition > 2 -delete root > n -new partition > 2 -ro
 
 Format both 2nd and 3rd partitions for file system ext4
 mkfs.ext4 /dev/vda2 and mkfs.ext4 /dev/vda3
+---
+
+safe to save and reboot here, do not reboot until next checkpoint after this
+
+---
 
 Mount all 3 partitions and create directories as needed:
-mount /dev/vda2 /mnt
-mkdir /mnt/boot
-mount /dev/vda1 /mnt/boot
-mkdir /mnt/home
-mount /dev/vda3 /mnt/home
+- mount /dev/vda2 /mnt
+- mkdir /mnt/boot
+- mount /dev/vda1 /mnt/boot
+- mkdir /mnt/home
+- mount /dev/vda3 /mnt/home
 
 Good to go now
