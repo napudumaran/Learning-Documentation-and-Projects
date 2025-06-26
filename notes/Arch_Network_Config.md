@@ -1,12 +1,14 @@
+install the networkmanager app package, which is GUI based:
+- `sudo pacman -S networkmanager`
+- `sudo pacman -S networkmanager network-manager-applet`
 
+enable our network manager service:
 
+`sudo systemctl enable NetworkManager --now`
 
+reboot, login, and ping archlinux.org to confirm
 
-
-
-
-
-
+`ping archlinux.org`
 
 ---
 
@@ -42,6 +44,28 @@ reboot your vm, and then acquire an IP
 `ip a`
 
 try to ping archlinux.org again.
+
+`ping archlinux.org`
+
+install the networkmanager app package, which is GUI based:
+- `sudo pacman -S networkmanager`
+- `sudo pacman -S networkmanager network-manager-applet`
+
+disable the services that we had to use to get our internet connection temporarily:
+
+- `sudo systemctl disable systemd-networkd --now`
+- `sudo systemctl disable systemd-resolved --now`
+
+enable our network manager service to take over instead:
+
+`sudo systemctl enable NetworkManager --now`
+
+Take out our resolv.conf file, and replace it with Network Manager's
+
+- `rm /etc/resolv.conf`
+- `ln -sf /run/NetworkManager/resolv.conf /etc/resolv.conf`
+
+reboot, login, and ping archlinux.org to confirm
 
 `ping archlinux.org`
 
