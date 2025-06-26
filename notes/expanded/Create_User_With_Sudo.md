@@ -57,6 +57,8 @@ Test by logging into user profile
 
 `su - YourUsernameHere`
 
+- `su` means to switch user
+
 and then running a sudo command like:
 
 `sudo echo "sudo works"`
