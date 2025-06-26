@@ -1,5 +1,6 @@
 The packaging tool apt doesn’t include Spotify in Pop!_OS’s default repository. This means that we will have to look at another installer to get Spotify. Fortunately, `flatpak` is able to be installed via `apt`.
-The command to install flatpak is
+
+The command to install flatpak is:
 ```bash
 sudo apt install flatpak
 ```
