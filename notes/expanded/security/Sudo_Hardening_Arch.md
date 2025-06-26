@@ -8,5 +8,5 @@ Add line for time allowed between sudo password prompts, changing it to everytim
 
 Add line for logging for everytime sudo is used:
 - `## Enable sudo logging for auditing`  
-- `Default logfiles="/var/log/sudo.log"`
+- `Defaults logfile=/var/log/sudo.log`
 
