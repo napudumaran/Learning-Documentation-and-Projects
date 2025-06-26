@@ -1,3 +1,5 @@
+# Installing Steam through Advanced Packaging Tool
+
 On most systems, installing Steam is as simple as:
 <code>sudo apt install steam</code>
 
