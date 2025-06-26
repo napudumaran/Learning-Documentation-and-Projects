@@ -12,4 +12,4 @@ Used lsblk to find my actual disk device — it was /dev/vda. Ignored the loop a
 
 - Security Hardening — [View Notes — Rough Draft](/notes/Arch_Security_Hardening.md)
 
-- Network Configuration — [View Notes — Rough Draft]
+- Network Configuration — [View Notes — Rough Draft](/notes/Arch_Network_Config.md)
