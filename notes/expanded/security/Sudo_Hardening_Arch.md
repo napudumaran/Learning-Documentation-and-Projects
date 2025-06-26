@@ -2,9 +2,11 @@ Open sudo file safely
 
 `sudo EDITOR=nano visudo`
 
-Add two lines to bottom of the file:
-
+Add line for time allowed between sudo password prompts, changing it to everytime:
+- `## Change sudo prompt-time for needing password again`
 - `Defaults timestamp_timeout=0`
+
+Add line for logging for everytime sudo is used:
+- `## Enable sudo logging for auditing`  
 - `Default logfiles="/var/log/sudo.log"`
 
-This will remove password grace period for sudo users. Basically, type in password everytime sudo is used. It will also log everytime sudo is used at `/var/log/sudo.log`
