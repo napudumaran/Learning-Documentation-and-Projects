@@ -16,8 +16,9 @@ To do this, we need a repository key, which Steam provides to allow secure acces
 The official instructions for adding Valve’s repository are located here: https://repo.steampowered.com/steam/
 
 We can use this command to download the GPG key:
-
-<code>cd ~/Downloads && wget https://repo.steampowered.com/steam/archive/stable/steam.gpg</code>
+```bash
+cd ~/Downloads && wget https://repo.steampowered.com/steam/archive/stable/steam.gpg
+```
 
 This is the breakdown of the command
 - `cd` means to change directory, or to change the folder we are in.
@@ -29,7 +30,9 @@ This is the breakdown of the command
 This command changes the current directory to your Downloads folder and downloads the key into it.
 
 Once the keyring is in our Downloads folder, we can then transfer that GPG key into our repository keyrings folder. The command to do so is:
-<code>sudo mv ~/Downloads/NameOfFileHere /usr/share/keyrings/NameOfFileHere</code>
+```bash
+sudo mv ~/Downloads/NameOfFileHere /usr/share/keyrings/NameOfFileHere
+```
 
 Here’s a breakdown of the command:
 - `sudo` means super user do. It's the equivalent of doing something with administrative controls.
@@ -37,8 +40,10 @@ Here’s a breakdown of the command:
 - `/usr/share/keyrings/` is the file path where GPG keys are stored for use.
 
 We will then run:
-<code>sudo apt update</code>
-<code>sudo apt install steam</code>
+```bash
+sudo apt update
+sudo apt install steam
+```
 
 That’s it — Steam should now be installed and working from Valve’s own repository.
 
