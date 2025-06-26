@@ -1,3 +1,5 @@
+# NVME naming explained
+
 - Linux has a unique naming scheme for devices unlike Windows. Linux names storage devices based on the actual device type, how many of them are present, and how many times they are partitioned. For example, my NVMe drives show as: `nvme0n1p1`.
 
   - `nvme` signals the type of device: Non-Volatile Memory Express.
