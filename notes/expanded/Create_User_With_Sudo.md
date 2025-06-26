@@ -62,3 +62,5 @@ Test by logging into user profile
 and then running a sudo command like:
 
 `sudo echo "sudo works"`
+
+You should get an initial message basically saying take great care and consideration when using sudo. That means, it works, along with your message of `sudo works`
