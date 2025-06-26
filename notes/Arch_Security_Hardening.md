@@ -14,4 +14,4 @@ Bonus setup for accessing VM terminal from home terminal — [Notes Here — Rou
 
 ---
 
-- Review and disable unnecessary services or unused services – [Notes Here — Rough Draft]
+- Review and disable unnecessary services or unused services – [Notes Here — Rough Draft](/notes/expanded/security/Arch_Service_Hardening.md)
