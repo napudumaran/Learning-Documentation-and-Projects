@@ -1,4 +1,4 @@
-Need to create a user to stop using root user.
+Need to create a user to stop using root user. [Notes Here — Rough Draft](/notes/expanded/Create_User_With_Sudo.md)
 Need to create user and add to "wheel" group (Supposedly its some old Unix naming for admin group)
 
 useradd -m -G wheel -s /bin/bash AddYourUsernameHere
