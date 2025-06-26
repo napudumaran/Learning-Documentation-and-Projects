@@ -7,7 +7,7 @@ Made sure I was booted in UEFI mode by looking for /sys/firmware/efi. It was the
 Used lsblk to find my actual disk device — it was /dev/vda. Ignored the loop and rom devices since those are from the live ISO.
 
 
-Began partitioning for boot, root, and home. — [Rough Notes]
+Began partitioning for boot, root, and home. — [Rough Notes](/notes/expanded/Partitioning_Arch_Linux.md)
 
 Started fdisk on /dev/vda to begin partitioning.
 
