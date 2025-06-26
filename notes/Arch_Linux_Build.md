@@ -1,3 +1,5 @@
+NOTE: DO NOT REBOOT VM UNTIL GETTING TO A "Checkpoint" which will be marked. If rebooting the VM, unless starting COMPLETELY OVER, things could happen like mount points being lost, or IP addresses being lost due to DHCP not being configured. There will be fixes made in case you did reboot. You could always start from the beginning as well.
+
 Booted the Arch Linux ISO in my VM (Virt-Manager).
 
 Checked that networking worked by pinging archlinux.org — DHCP came through fine.
