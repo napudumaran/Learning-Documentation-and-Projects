@@ -9,7 +9,7 @@ Let finish installing Base System packages
 genfstab -U /mnt >> /mnt/etc/fstab
 
 - U uses UUIDs (preferred, avoids device name shuffling)
-- >> appends the generated output into /mnt/etc/fstab
+- `>>` appends the generated output into /mnt/etc/fstab
 - confirm works by cat /mnt/etc/fstab
 
 switch from live ISO into Arch System
