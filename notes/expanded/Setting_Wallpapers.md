@@ -1,3 +1,5 @@
+# Setting Up Wallpapers in Pop!_OS
+
 To set a wallpaper, you can use GNOME's settings.
 Open a terminal and run:
 
