@@ -24,6 +24,9 @@ Manual Arch install and virt-manager configurations — [Notes coming soon](/not
 
 ### Arch Linux Build
 Manual Arch Linux configuration - [Notes coming soon]
+
+---
+
 ## Why build my own Kali? 
 - I'll be able to know what every tool does and explain why I chose them and how I use them
 - It won't be bloated
