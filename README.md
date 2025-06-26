@@ -23,7 +23,7 @@ Manual Arch install and virt-manager configurations — [Notes coming soon](/not
 ---
 
 ### Arch Linux Build
-Manual Arch Linux configuration - [Notes coming soon](/notes/Arch_Linux_Build.md)
+Manual Arch Linux configuration - [Notes — Rough Draft](/notes/Arch_Linux_Build.md)
 
 ---
 
