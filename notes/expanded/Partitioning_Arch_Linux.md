@@ -52,7 +52,7 @@ mkfs.ext4 /dev/vda2 and mkfs.ext4 /dev/vda3
 
 ---
 
-safe to save and reboot here, do not reboot until next checkpoint after this
+safe to save and reboot here, do not reboot until next checkpoint after this, which is technically not safe until setting up network, or we lose IP with no networking tools
 
 ---
 
