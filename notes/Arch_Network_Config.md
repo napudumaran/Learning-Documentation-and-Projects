@@ -44,7 +44,7 @@ Find your NIC name with:
 ip link
 ```
 
-Do not use the `lo` device. Your typically looking for another NIC device name, such as `enp1s0`. These device names are marked with numbers like: `1: lo` or `2. enp1s0`.
+Do not use the `lo` device. Your typically looking for another NIC device name, such as `enp1s0`. These device names are marked with numbers like: `1: lo: <LOOPBACK.....>` or `2. enp1s0: <BROADCAST.....>`.
 
 Manually create the config file for your NIC. We will write using echo, since we dont have any text editors if we never installed them prior to rebooting.
 
