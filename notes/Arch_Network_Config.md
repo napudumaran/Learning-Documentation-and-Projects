@@ -1,5 +1,8 @@
-install the networkmanager app package, which is GUI based:
+install the networkmanager app package:
 - `sudo pacman -S networkmanager`
+
+This will install the GUI-supported network manager(optional):
+
 - `sudo pacman -S networkmanager network-manager-applet`
 
 enable our network manager service:
