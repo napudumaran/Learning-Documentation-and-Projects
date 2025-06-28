@@ -47,8 +47,12 @@ try to ping archlinux.org again.
 
 `ping archlinux.org`
 
-install the networkmanager app package, which is GUI supported for future desktop setup:
+install the networkmanager app package:
+
 - `sudo pacman -S networkmanager`
+
+This will install the GUI-supported network manager:
+
 - `sudo pacman -S networkmanager network-manager-applet`
 
 disable the services that we had to use to get our internet connection temporarily:
