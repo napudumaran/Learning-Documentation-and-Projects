@@ -26,10 +26,18 @@ Make the directory
 
 mkdir -p /etc/systemd/network
 
-Write using echo, since we dont have any text editors installed more than likely.
+Find your NIC name with:
+
+```bash
+ip link
+```
+
+Do not use the `lo` device. Your typically looking for another NIC device name, such as `enp1s0`. These device names are marked with numbers like: `1: lo` or `2. enp1s0`.
+
+Manually create the config file for your NIC. We will write using echo, since we dont have any text editors if we never installed them prior to rebooting.
 
 - `echo '[Match]' > /etc/systemd/network/20-wired.network`
-- `echo 'Name=enp1s0' >> /etc/systemd/network/20-wired.network`
+- `echo 'Name=YourNICDeviceNameHere' >> /etc/systemd/network/20-wired.network`
 - `echo '' >> /etc/systemd/network/20-wired.network`
 - `echo '[Network]' >> /etc/systemd/network/20-wired.network`
 - `echo 'DHCP=yes' >> /etc/systemd/network/20-wired.network`
