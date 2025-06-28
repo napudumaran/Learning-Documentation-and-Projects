@@ -47,7 +47,7 @@ try to ping archlinux.org again.
 
 `ping archlinux.org`
 
-install the networkmanager app package, which is GUI based:
+install the networkmanager app package, which is GUI supported for future desktop setup:
 - `sudo pacman -S networkmanager`
 - `sudo pacman -S networkmanager network-manager-applet`
 
