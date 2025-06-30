@@ -18,7 +18,7 @@ We can then check to see if `nmap` installed successfully, by using the `nmap` t
 ```bash
 nmap -V
 ```
-To do our scans safely and legally for our learning, we can simply just scan our loopback address. An explanation of what loopback addresses are can be found here → [Deeper Breakdown Coming Soon]
+To do our scans safely and legally for our learning, we can simply just scan our loopback address. An explanation of what loopback addresses are, can be found here → [Deeper Breakdown Coming Soon]
 
 # How, What, and Why:
 
@@ -48,7 +48,7 @@ There are many other options which are less commonly used such as:
 
 ## Why not just use all the scans?
 
-#### "Theoretically, The action of deleting logs will always be recorded, and the action of deleting the log that deletes the log, will always be recorded"
+#### "Theoretically, The action of deleting logs will always be recorded, and the action of deleting the log that logs the delete, will always be recorded"
 
 Every action made on or against a system leaves a trace, and leaving a trace is the equivalent of signalling a threat. The caveat is that some people dedicate time and effort to removing as many traces as possible, but when it comes to `nmap`, that’s a different conversation.
 
