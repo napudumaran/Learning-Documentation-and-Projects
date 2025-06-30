@@ -8,7 +8,7 @@ But if Pop!_OS’s default method fails, we can add Steam’s repository directl
 ---
 
 If the default method fails, we can install Steam by adding Valve’s repository manually. We will need to get their repository key to download from Valve (the company that made Steam) directly.
-What is a repository key, and why can't we just <code>sudo apt install</code> right now and call it a day?
+What is a repository key, and why can't we just ```bash sudo apt install``` right now and call it a day?
 
 Repositories are centralized storage locations for software packages and metadata. Think of them like software storefronts — similar to Walmart or an app store.
 
