@@ -31,6 +31,8 @@ Manual Arch Linux configuration — [View Notes — Rough Draft](/notes/Arch_Lin
 
 Installation and walkthrough of cybersecurity tools — [Notes Coming Soon]
 
+---
+
 ## Why build my own Kali? 
 - I'll be able to know what every tool does and explain why I chose them and how I use them
 - It won't be bloated
