@@ -1,3 +1,8 @@
+
+NOTE: DO NOT USE NMAP ON MACHINES YOU DO NOT OWN OR CONTROL WITHOUT EXPLICIT PERMISSION. DOING SO IS ILLEGAL AND UNETHICAL!
+
+---
+
 To install `nmap` on a Linux Machine with the `pacman` (Package manager) tool, we can use the command:
 ```bash
 sudo pacman -S nmap
@@ -6,8 +11,6 @@ We can then check to see if `nmap` installed successfully, by using the `nmap` t
 ```bash
 nmap -V
 ```
-NOTE: DO NOT USE NMAP ON MACHINES YOU DO NOT OWN OR CONTROL WITH EXPLICIT PERMISSION. DOING SO IS ILLEGAL AND UNETHICAL!
-
 To do our scans safely and legally for our learning, we can simply just scan our loopback address. An explanation of what loopback addresses are can be found here → [Deeper Breakdown Coming Soon]
 
 A simple command that sends out SYN packets is:
