@@ -1,7 +1,7 @@
 # Arch Linux Virtual Machine Install 
 
 NOTE: This documentation assumes you've already downloaded the ISO — whether by torrent or direct HTML. (If not, you can grab it from the official Arch Linux website.)
-A quick write-up for downloading the ISO can be found here → [Notes](/notes/expanded/HTML&Torrents_HowTo.md)
+A quick write-up for downloading the ISO can be found here → [Full Breakdown](/notes/expanded/HTML&Torrents_HowTo.md)
 
 Click edit tab top left > preferences > enable XML editiing for UEFI boot setup stuff cause of NVRAM emulation
 File tab > New Virtual Machine > Local install media > browse for iso location and choose
