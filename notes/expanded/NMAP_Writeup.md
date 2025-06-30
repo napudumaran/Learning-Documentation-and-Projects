@@ -6,7 +6,7 @@ NOTE: DO NOT USE NMAP ON MACHINES YOU DO NOT OWN OR CONTROL WITHOUT EXPLICIT PER
 
 # Brief Summary
 
-`nmap` is a tool that doubles as a network discovery tool (hence the name network map, or `namp` for short) and security auditing tool. Created by Gordan Lyon, it helped network engineers and sysadmins find hosts, running services, and open ports. 
+`nmap` is a tool that doubles as a network discovery tool (hence the name network map, or `nmap` for short) and security auditing tool. Created by Gordan Lyon, it helped network engineers and sysadmins find hosts, running services, and open ports. 
 
 # Install Steps:
 
@@ -48,7 +48,7 @@ There are many other options which are less commonly used such as:
 
 ## Why not just use all the scans?
 
-#### "Theoretically, The action of deleting logs will always be recorded, and the action of deleting the log that logs the delete, will always be recorded"
+#### "Theoretically, the action of deleting logs will always be recorded, and the action of deleting the log that logs the delete, will always be recorded"
 
 Every action made on or against a system leaves a trace, and leaving a trace is the equivalent of signalling a threat. The caveat is that some people dedicate time and effort to removing as many traces as possible, but when it comes to `nmap`, that’s a different conversation.
 
