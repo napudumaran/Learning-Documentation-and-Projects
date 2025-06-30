@@ -18,12 +18,12 @@ Configuring virt-manager and supporting tools to run virtual machines locally fo
 ---
 
 ### Arch Linux Install (VM)
-Manual Arch install and virt-manager configurations — [View Notes — Rough Draft](/notes/Arch_Linux_Install.md)
+Manual Arch install and virt-manager configurations, including setting up UEFI support — [View Notes — Rough Draft](/notes/Arch_Linux_Install.md)
 
 ---
 
 ### Arch Linux Build
-Manual Arch Linux configuration — [View Notes — Rough Draft](/notes/Arch_Linux_Build.md)
+A How-To for manually setting up an Arch Linux configuration, with breakdowns of each step along the way — [View Notes — Rough Draft](/notes/Arch_Linux_Build.md)
 
 ---
 
