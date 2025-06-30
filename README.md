@@ -29,7 +29,7 @@ A How-To for manually setting up an Arch Linux configuration, with breakdowns of
 
 ### Cybersecurity Tools Breakdown
 
-Installation and walkthrough of cybersecurity tools — [In Progress](/notes/Cybersecurity_Tools_Breakdown.md)
+Installation and walkthrough of various cybersecurity tools — [In Progress](/notes/Cybersecurity_Tools_Breakdown.md)
 
 ---
 
