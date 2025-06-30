@@ -20,3 +20,5 @@
 - How torrents differ from HTML downloads, what torrent I downloaded, and how I used → [Deeper Breakdown](/notes/expanded/HTML&Torrents_HowTo.md)
 
 - Using the terminal to manage my audio devices, and ensure they're using the correct quality mode → [Deeper Breakdown — Unfinished](/notes/expanded/Managing_and_Controlling_Audio.md)
+
+- Windows uses alt codes rather than Unicode. Alt codes require the use of a number pad, and require holding the alt key down, pressing the sequence of numbers for a code in the keypad, and letting go of alt. For example, the alt code for `→` would be `ALT` + `26`. 
