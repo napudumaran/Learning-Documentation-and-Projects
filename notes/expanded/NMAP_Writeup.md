@@ -46,15 +46,19 @@ There are many other options which are less commonly used such as:
 - `-sX` -Xmas Scan (Testing for host reactions to abnormal flag combinations)
 - `-sF` -FIN Scan (Testing for simple firewalls)
 
+## Interpreting Output
+
+
+
 ## Why not just use all the scans?
 
-#### "Theoretically, the action of deleting logs will always be recorded, and the action of deleting the log that logs the delete, will always be recorded"
+#### "*Theoretically, the action of deleting logs will always be recorded, and the action of deleting the log that logs the delete, will always be recorded*"
 
 Every action made on or against a system leaves a trace, and leaving a trace is the equivalent of signalling a threat. The caveat is that some people dedicate time and effort to removing as many traces as possible, but when it comes to `nmap`, that’s a different conversation.
 
 With `nmap`, the goal for an attacker is to gather as much information as possible without setting off alarms. This is why we have "stealthy" scans like `-sS` compared to louder scans such as `sT`. Some methods of evading detection even include methods such as the "low and slow" approach, where a single scan is stretched over days or weeks to avoid triggering alerts.
 
-In the game of attack and defense, the best defense ends the attack before it begins, and the best attack meets no defense at all.
+#### "*In the game of attack and defense, the best defense ends the attack before it begins, and the best attack meets no defense at all.*"
 
 
 
