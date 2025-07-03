@@ -31,6 +31,18 @@ sudo apt install nmap
 
 # How, What, and Why:
 
-## How-to scan, and additional types of scanning options:
+## How-to use, and the different uses explained:
+
+There are three common uses for `ncat`, which are:
+- Connecting to a service(Client Mode)
+- Listening for incoming connections (opening a port)
+- Transfering files over TCP
+
+Connecting to a service lets you send data to open ports, letting you see banners(open port information) or checking for basic connectivity. This can be done with the command:
+```bash
+ncat 127.0.0.1 22
+```
+
+You can replace the IP with a different target, as well as a different protocol. This command targets the loopback address of our machine, as well as checks to see if port 22 is open. This would display a "banner" which looks like: `SSH-2.0-OpenSSH_10.0.` if port 22 is open.
 
 ## Interpreting Output
