@@ -69,7 +69,11 @@ This way of using `ncat` is useful for testing whether logging programs detect u
 ### Transferring files over TCP
 ---
 
-File transfer with `ncat` is not encrypted or authenticated, but it's so universal and practical that it can be used almost anywhere. This process starts by establishing a TCP connection between two systems, and pushing data through it. This can be done with the command:
+File transfer with `ncat` is not encrypted or authenticated, but it's so universal and practical that it can be used almost anywhere. This process starts by establishing a TCP connection between two systems, and pushing data through it. 
+
+**Important Note:** *Files are NOT downloaded; it is sent to the listening device through a continuous data stream. This distinction is important because reverse shells exploit similar behavior by forcing connecting systems to run malicious code*
+
+This can be done with the command:
 ```bash
 ncat -lvp PortNumberHere > YourFileHere.txt
 ```
@@ -82,7 +86,5 @@ ncat YourTargetIP PortNumberHere < YourFileHere.txt
 - Replace "`YourTargetIP`" with the IP of the machine hosting the open port
 - Replace "`PortNumberHere`" with the port that was opened by the listening device
 - Replace "`YourFileHere.txt`" with a desired file to share
-
-*Please note that the file is NOT downloaded; it is sent to the listening device. This distinction is important because reverse shells exploit similar behavior by forcing connecting systems to run malicious code*
 
 This tool allows the ability to test against data exfiltration, as well as quick movement of tools and data in a stealthy manner. The issue with using this tool; however, is the file transfer is unencrypted and unauthenticated, so for testing purposes, do not use this tool with sensitive information or outside of lab environments even for learning purposes.
