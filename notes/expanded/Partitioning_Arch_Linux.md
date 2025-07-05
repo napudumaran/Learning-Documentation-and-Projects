@@ -30,7 +30,7 @@ mkfs.ext4 /dev/vda2
 ```
 Need to mount root partition
 ```bash
-mount dev/vda2 /mnt
+mount /dev/vda2 /mnt
 ```
 root partition is now located in /mnt
 
