@@ -1,5 +1,6 @@
+```bash
 pacstrap /mnt base linux linux-firmware
-
+```
 - Minimal Arch userland (base)
 - The Linux kernel (linux)
 - Firmware blobs for hardware support (linux-firmware)
