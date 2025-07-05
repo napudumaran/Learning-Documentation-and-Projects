@@ -70,7 +70,7 @@ fdisk /dev/vda
 Format both 2nd and 3rd partitions for file system ext4
 ```bash
 mkfs.ext4 /dev/vda2
-and mkfs.ext4 /dev/vda3
+mkfs.ext4 /dev/vda3
 ```
 ---
 
