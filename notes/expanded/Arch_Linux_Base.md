@@ -17,6 +17,8 @@ genfstab -U /mnt >> /mnt/etc/fstab
 ```bash
 cat /mnt/etc/fstab
 ```
+Should see partitions and UUID data.
+
 switch from live ISO into Arch System
 
 ```bash
