@@ -1,19 +1,12 @@
 
-Started fdisk on /dev/vda to begin partitioning.
-
-Took a moment to understand:
-
-What sectors are (tiny chunks of disk, usually 512 bytes).
-
-Why partitions start at sector 2048 (to avoid reserved disk areas and for better performance).
-
-The difference between MB (marketing) and MiB (what Linux actually uses).
-
-The purpose of my partitions — EFI for boot, swap for memory overflow, and root for everything else.
-
-Created the first partition for EFI, accepted the default start sector (2048), and set the size to 512M.
-
-Steps are fdisk /dev/vda > g -create new GPT > n -new partition > use default sector (2048) > give extra 512MiB of space (+512M)
+First steps are 
+```bash
+fdisk /dev/vda
+```
+- `g` -create new GPT
+- `n` -new partition
+- Enter Key - use default sector (2048)
+- `+512M` - give extra 512MiB of space from default sector
 
 First partition is created, setting type `t` for `1` (EFI System) so it can boot from here instead of VM SATA DISKROM
 
