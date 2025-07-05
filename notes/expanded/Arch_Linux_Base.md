@@ -13,8 +13,10 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 - U uses UUIDs (preferred, avoids device name shuffling)
 - `>>` appends the generated output into /mnt/etc/fstab
-- confirm works by cat /mnt/etc/fstab
-
+- confirm works by:
+```bash
+cat /mnt/etc/fstab
+```
 switch from live ISO into Arch System
 
 ```bash
