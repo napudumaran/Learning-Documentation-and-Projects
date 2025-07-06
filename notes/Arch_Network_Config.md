@@ -25,7 +25,7 @@ ping archlinux.org
 
 # Troubleshooting
 
-This section is for people who rebooted after first root login, and realized networking wasnt setup, losing our IP upon shutdown, and then not getting a new one upon boot up.
+This section is for in case we dont have network manager working for some reason when we installed it during the `chroot` in our Arch-Linux desktop environment before restart.
 
 After confirming that we lost our internet connection by pinging archlinux.org
 `ping archlinux.org` and getting Temporary failure in name resolution, we can now setup DHCP completely manually.
