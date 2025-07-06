@@ -112,7 +112,7 @@ ls /boot
 ```
 Should see:
 ```bash
-EFI  loader
+EFI  initramfs-linux-fallback.img  initramfs-linux.img  loader  vmlinuz-linux
 ```
 
 Create arch.conf for boot.
