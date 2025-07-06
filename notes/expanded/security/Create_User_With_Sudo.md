@@ -24,7 +24,7 @@ Edit: I have no network config. I assumed i did because the live IOS was able to
 - y means refresh package list
 - u means to upgrade outdated packages
 
-We will also need to install the program `sudo` since it doesnt come with arch. 
+We will also need to install the program `sudo` if we didn't install that either during the initial setup from live ISO
 ```bash
 pacman -S sudo
 ```
