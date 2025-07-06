@@ -86,4 +86,8 @@ mount /dev/vda1 /mnt/boot/efi
 mkdir /mnt/home
 mount /dev/vda3 /mnt/home
 ```
-Good to go now
+Confirm that vda1-vda3 are all listed under the right mountpoints using `lsblk`.
+
+- vda1 should be /mnt/boot/efi
+- vda2 should be /mnt
+- vda3 should be /mnt/home
