@@ -81,7 +81,7 @@ safe to save and reboot here, do not reboot until next checkpoint after this, wh
 Mount all 3 partitions and create directories as needed:
 ```bash
 mount /dev/vda2 /mnt
-mkdir /mnt/boot/efi
+mkdir -p /mnt/boot/efi
 mount /dev/vda1 /mnt/boot/efi
 mkdir /mnt/home
 mount /dev/vda3 /mnt/home
