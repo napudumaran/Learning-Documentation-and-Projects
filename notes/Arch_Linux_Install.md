@@ -34,8 +34,10 @@ virt-manager doesnt have gui for NVRAM file location to emulate that NVRAM chip,
 About 14 lines down in XML file should be <loader> entry. Need to put <nvram> entry. Virt-manager install should have covered what file and where the file is for that for the UEFI boot.
 
 Mine looks like this:
-   <loader readonly="yes" type="pflash">/usr/share/OVMF/OVMF_CODE_4M.fd</loader>
-    <nvram>/var/lib/libvirt/qemu/nvram/OVMF.md</nvram>
+```   
+<loader readonly="yes" type="pflash">/usr/share/OVMF/OVMF_CODE_4M.fd</loader>
+<nvram>/var/lib/libvirt/qemu/nvram/OVMF.fd</nvram>
+```
 
 Click apply 
     
