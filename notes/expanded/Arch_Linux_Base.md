@@ -139,8 +139,10 @@ then unmount `/mnt` before rebooting:
 ```bash
 umount -R /mnt
 ```
+Then reboot:
+```bash
 reboot
-
+```
 force power off, take SATA CDROM off from first boot device, put VirtIO Disk back on top.
 
 test VM, turn back on
