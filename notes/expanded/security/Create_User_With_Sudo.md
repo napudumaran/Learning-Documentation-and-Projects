@@ -10,7 +10,7 @@ Change the password for root in case your using the same password by running
 ```bash
 passwd
 ```
-We need to give sudo access to our created user account, but we have no text editor currently. We need to install one.
+We need to give sudo access to our created user account. In case we don't have a text editor for some reason, we can install nano.
 ```bash
 pacman -Syu nano
 ```
