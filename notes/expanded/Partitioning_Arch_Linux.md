@@ -36,8 +36,8 @@ root partition is now located in /mnt
 
 Need to make directory to boot, and mount partition 1 to boot
 ```bash
-mkdir /mnt/boot/efi
-mount /dev/vda1 /mnt/boot/efi
+mkdir /mnt/boot
+mount /dev/vda1 /mnt/boot
 ```
 ---
 I messed up. I want to have a seperate partition for the home directory. I need 3 partitions
@@ -45,7 +45,7 @@ I messed up. I want to have a seperate partition for the home directory. I need 
 Fixing my mistakes start here:
 Unmounting all my mounted drives
 ```bash
-umount /mnt/boot/efi
+umount /mnt/boot
 umount /mnt
 ```
 Deleting partition 2
@@ -81,13 +81,13 @@ safe to save and reboot here, do not reboot until next checkpoint after this, wh
 Mount all 3 partitions and create directories as needed:
 ```bash
 mount /dev/vda2 /mnt
-mkdir -p /mnt/boot/efi
-mount /dev/vda1 /mnt/boot/efi
+mkdir -p /mnt/boot
+mount /dev/vda1 /mnt/boot
 mkdir /mnt/home
 mount /dev/vda3 /mnt/home
 ```
 Confirm that vda1-vda3 are all listed under the right mountpoints using `lsblk`.
 
-- vda1 should be /mnt/boot/efi
+- vda1 should be /mnt/boot
 - vda2 should be /mnt
 - vda3 should be /mnt/home
