@@ -131,6 +131,12 @@ passwd
 ```
 -enter password
 
+Installing packages and enable services that make our life easier upon initial bootup into our desktop:
+```bash
+pacman -Sy networkmanager nano sudo
+systemctl enable NetworkManager
+```
+
 Exit back to the live iso by using:
 ```bash
 exit
