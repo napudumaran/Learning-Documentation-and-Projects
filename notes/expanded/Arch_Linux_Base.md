@@ -101,10 +101,20 @@ check:
 ```bash
 cat /boot/efi/loader/loader.conf
 ```
+Should see:
+```bash
+#timeout 3
+#console-mode keep
+```
 check: 
 ```bash
 ls /boot
 ```
+Should see:
+```bash
+efi  initramfs-linux-fallback.img  initramfs-linux.img  vmlinuz-linux
+```
+
 Create arch.conf for boot.
 ```bash
 mkdir -p /boot/efi/loader/entries
