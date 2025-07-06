@@ -27,8 +27,14 @@ switch from live ISO into Arch System
 ```bash
 arch-chroot /mnt
 ```
+Test to make sure arch-chroot worked by running:
+```bash
+ls /
+```
 
-setting time to central time
+If you see a bunch of directories, then you are successfully mounted in chroot. If not, refollow the partitioning steps.
+
+We will now set our time to central time. 
 ```bash
 ln -sf /usr/share/zoneinfo/US/Central /etc/localtime
 ```
