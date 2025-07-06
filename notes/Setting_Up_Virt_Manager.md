@@ -88,3 +88,10 @@ sudo cp /usr/share/OVMF/OVMF_VARS.fd /var/lib/libvirt/qemu/nvram/
 ```
   
 Make note of the copied file name — you’ll need it when setting up your VM’s firmware in Virt-Manager (it’ll ask for this when assigning the NVRAM file for UEFI boot).
+
+!!!VERY IMPORTANT!!!
+If you make another VM, and want to use UEFI, you will have to repeat the:
+```bash
+sudo cp /usr/share/OVMF/OVMF_VARS.fd /var/lib/libvirt/qemu/nvram/
+```
+process for each one. Please DO NOT think that virt-manager will create a permanant file for you. It only create temporary NVRAM files, which are lost upon reboot. Thats why these steps are so important!
