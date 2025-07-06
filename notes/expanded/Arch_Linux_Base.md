@@ -108,7 +108,7 @@ Should see:
 ```
 check: 
 ```bash
-ls /boot/
+ls /boot
 ```
 Should see:
 ```bash
