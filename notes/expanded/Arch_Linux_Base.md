@@ -10,10 +10,13 @@ Let finish installing Base System packages
 ```bash
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
+- `genfstab` scans mounted partitions in `/mnt` and generates UUIDs (Uniserval Unique Identifiers)
+- `-U` uses UUIDs (preferred, avoids device name shuffling)
+- `>>` appends the generated output into `/mnt/etc/fstab`
 
-- U uses UUIDs (preferred, avoids device name shuffling)
-- `>>` appends the generated output into /mnt/etc/fstab
-- confirm works by:
+*Note: UUIDs are important since they gave a filesystem a unique and stable ID, preventing partitions from pointing to the wrong one, and corrupting them.*
+
+confirm works by:
 ```bash
 cat /mnt/etc/fstab
 ```
