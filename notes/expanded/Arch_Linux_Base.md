@@ -89,7 +89,7 @@ cat <<EOF > /etc/hosts
 127.0.1.1   GhettoKali.localdomain GhettoKali
 EOF
 ```
-This lets us ensure properhostname resolution, mapping loopback address to our local system to prevent future networking issues.
+This lets us ensure proper hostname resolution, mapping loopback address to our local system to prevent future networking issues.
 
 ```bash
 bootctl install
@@ -97,7 +97,7 @@ bootctl install
 - installs systemd-boot to your mounted /boot (which is your ESP)
 - Registers a boot entry with the UEFI firmware
 
-We now need to ensure the `/mnt/boot/efi` is the proper boot path
+We now need to ensure the `/boot/efi` is the proper boot path
 
 We will need to install the efibootmgr tool:
 ```bash
