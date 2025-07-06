@@ -97,6 +97,18 @@ bootctl install
 - installs systemd-boot to your mounted /boot (which is your ESP)
 - Registers a boot entry with the UEFI firmware
 
+We now need to ensure the `/mnt/boot/efi` is the proper boot path
+
+We will need to install the efibootmgr tool:
+```bash
+pacman -Sy efibootmgr
+```
+
+And then use the tool to properly assing the correct boot pathing:
+```bash
+efibootmgr --create --disk /dev/vda --part 1 --label "ArchLinux" --loader /EFI/systemd/systemd-bootx64.efi
+```
+
 check: 
 ```bash
 cat /boot/efi/loader/loader.conf
