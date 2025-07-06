@@ -1,10 +1,11 @@
+Network manager should have been installed via the live ISO. If not, then the troubleshooting steps are below. General install instructions are provided anyways.
+
 install the networkmanager app package:
 ```bash
 sudo pacman -S networkmanager
 ```
-OR
 
-the GUI-supported network manager(optional):
+Install GUI interface for network manager(optional):
 
 ```bash
 sudo pacman -S networkmanager network-manager-applet
