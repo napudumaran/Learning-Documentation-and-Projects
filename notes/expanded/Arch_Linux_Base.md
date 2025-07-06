@@ -69,14 +69,21 @@ echo "YourHostNameHere" > /etc/hostname
 ```
 I named mine GhettoKali for reference
 
-```
+We will now configure the `/etc/hosts` file:
+
+```bash
 cat <<EOF > /etc/hosts
 ```
+- `cat <<EOF >` is called a "here-document", letting us write multiple lines all in one command
+- we are writing to `/etc/hosts`
 
+```bash
 127.0.0.1   localhost
 ::1         localhost
 127.0.1.1   GhettoKali.localdomain GhettoKali
 EOF
+```
+This lets us ensure properhostname resolution, mapping loopback address to our local system to prevent future networking issues.
 
 ```bash
 bootctl install
@@ -86,7 +93,7 @@ bootctl install
 
 check: 
 ```bash
-cat /boot/loader/loader.conf
+cat /boot/efi/loader/loader.conf
 ```
 check: 
 ```bash
@@ -94,8 +101,8 @@ ls /boot
 ```
 Create arch.conf for boot.
 ```bash
-mkdir -p /boot/loader/entries
-cat <<EOF > /boot/loader/entries/arch.conf
+mkdir -p /boot/efi/loader/entries
+cat <<EOF > /boot/efi/loader/entries/arch.conf
 title   Arch Linux
 linux   /vmlinuz-linux
 initrd  /initramfs-linux.img
