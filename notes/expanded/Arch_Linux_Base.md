@@ -43,7 +43,7 @@ sed -i '/^#en_US.UTF-8 UTF-8/s/^#//' /etc/locale.gen
 ```
 That tells sed to:
 - Find the line that starts with #en_US.UTF-8 UTF-8
-- Remove the #
+- Remove the #, which turns the line from a "note-line" to an "actionable line."
 
 ```bash
 cat /etc/locale.conf
