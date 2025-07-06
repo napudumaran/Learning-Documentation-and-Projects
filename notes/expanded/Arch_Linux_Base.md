@@ -45,10 +45,23 @@ That tells sed to:
 - Find the line that starts with #en_US.UTF-8 UTF-8
 - Remove the #, which turns the line from a "note-line" to an "actionable line."
 
+Generate the locales:
+```bash
+locale-gen
+```
+
+Create system-wide locale setting in `/etc/locale.conf`
+```bash
+echo "LANG=en_US.UTF-8" > /etc/locale.conf
+```
+- We are writing using echo, and writing to the `locale.conf` file.
+
+Test for confirmation:
+
 ```bash
 cat /etc/locale.conf
 ```
-confirmed
+Should see our system wide local setting as the output
 
 ```bash
 echo "GhettoKali" > /etc/hostname
