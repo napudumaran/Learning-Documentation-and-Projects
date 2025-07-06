@@ -63,9 +63,11 @@ cat /etc/locale.conf
 ```
 Should see our system wide local setting as the output
 
+Create hostname for device:
 ```bash
-echo "GhettoKali" > /etc/hostname
+echo "YourHostNameHere" > /etc/hostname
 ```
+I named mine GhettoKali for reference
 
 ```
 cat <<EOF > /etc/hosts
