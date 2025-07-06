@@ -131,7 +131,11 @@ passwd
 ```
 -enter password
 
+Exit back to the live iso by using:
+```bash
 exit
+```
+then unmount `/mnt` before rebooting:
 ```bash
 umount -R /mnt
 ```
