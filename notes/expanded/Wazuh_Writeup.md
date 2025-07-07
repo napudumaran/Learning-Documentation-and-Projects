@@ -13,6 +13,7 @@ Convert the GPG key into a useable format for `apt`, and store it:
 ```bash
 gpg --dearmor < GPG-KEY-WAZUH | sudo tee /usr/share/keyrings/wazuh-archive-keyring.gpg >/dev/null
 ```
+Here's a breakdown of the command:
 - `gpg` is the GNU privacy guard tool, which handles encryption keys
 - `--dearmor` converts keys from ASCII "armored" format into a binary form `apt` can use
 - `< GPG-KEY-WAZUH` redirects the contents of the GPG key for `gpg` to use
@@ -22,6 +23,22 @@ gpg --dearmor < GPG-KEY-WAZUH | sudo tee /usr/share/keyrings/wazuh-archive-keyri
 - `>/dev/null` takes unneccesary output, and throws it in a garbage-bin equivalent
 
 In summary: the command creates a keyring file in the right directory and format that `apt` can use from Wuzah's GPG key.
+
+Add the Wuzah repository so `apt` uses packages signed by the key we downloaded previously"
+```bash
+echo "deb [signed-by=/usr/share/keyrings/wazuh-archive-keyring.gpg] https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
+```
+Here's a breakdown of the command:
+- `echo` will print everything in quotes, so we can pipe(`|`) that into the next command
+- `deb` indicates the input is a binary package repository
+- `[signed-by=/usr/share/keyrings/wazuh-archive-keyring.gpg]` is the key we are refering to
+- `signed-by=` indicates what `apt` should trust for this repository
+- `https://packages.wazuh.com/4.x/apt/` is the web server of Wuzah's official repository
+- `stable` is the release label
+- `main` is the component name
+- `sudo tee` writes the input from the pipe, into the directory `/etc/apt/sources.list.d/wazuh.list` with admin privileges
+
+This creates a dedicate file for `apt` to securely pull Wuzah packages, which is trustworthy and ensured by the specific key we had downloaded.
 
 Update our package list using:
 ```bash
@@ -39,3 +56,6 @@ Check the status of Wuzah Manager:
 ```bash
 sudo systemctl status wazuh-manager
 ```
+Wuzah Manager should be showing as active and running, which means we're good to go.
+
+If we want to 
