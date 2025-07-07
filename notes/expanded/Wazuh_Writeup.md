@@ -58,4 +58,8 @@ sudo systemctl status wazuh-manager
 ```
 Wuzah Manager should be showing as active and running, which means we're good to go.
 
-If we want to 
+If we want to enable the service on boot, we can run:
+```bash
+sudo systemctl enable wazuh-manager
+```
+This saves us having to remember to enable the service each time.
