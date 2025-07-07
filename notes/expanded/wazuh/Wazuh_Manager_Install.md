@@ -1,4 +1,4 @@
-# Wazuh Install, Breakdown, and How-to-use
+# Wazuh Manager Install
 
 NOTE: You will need both the Wuzah Manager, and the Wuzah Client. The Wuzah manager is not compatible as is with an Arch Linux distro, but is officially compatible with Debian/Ubuntu distros. The Wuzah clent is compatible with Arch Linux.
 
