@@ -9,17 +9,19 @@ curl -sO https://packages.wazuh.com/key/GPG-KEY-WAZUH
 - `-s` turns the download into a silent download
 - `-O` keeps the original file name
 
-Add the Wuzah repository, after downloading the GPG key:
+Convert the GPG key into a useable format for `apt`, and store it:
 ```bash
-echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
+gpg --dearmor < GPG-KEY-WAZUH | sudo tee /usr/share/keyrings/wazuh-archive-keyring.gpg >/dev/null
 ```
+- `gpg` is the GNU privacy guard tool, which handles encryption keys
+- `--dearmor` converts keys from ASCII "armored" format into a binary form `apt` can use
+- `< GPG-KEY-WAZUH` redirects the contents of the GPG key for `gpg` to use
+- `|` take the output of the first command, and runs it through the next command
+- `sudo tee` runs `tee`; a tool that writes to files, in "admin mode" 
+- `/usr/share/keyrings/wazuh-archive-keyring.gpg` is the directory that holds the third-party `apt` keyrings for Debian/Ubuntu systems
+- `>/dev/null` takes unneccesary output, and throws it in a garbage-bin equivalent
 
-- The first portion of this command, `echo "deb https://packages.wazuh.com/4.x/apt/ stable main"` is printing everything quotes, so we can pipe it into the next command.
-- `|` is what we're using to take the input into the next command
-- `tee` takes the input, and writes it out into our specified file
-- `/etc/apt/sources.list.d/wuzah.list` is the directory to the file `wuzah.list` where we are writing the wuzah repository link to.
-
-This command lets `apt` know where to get Wuzah packages from.
+In summary: the command creates a keyring file in the right directory and format that `apt` can use from Wuzah's GPG key.
 
 Update our package list using:
 ```bash
