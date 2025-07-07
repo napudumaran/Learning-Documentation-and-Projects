@@ -16,4 +16,4 @@ Used lsblk to find my actual disk device → it was /dev/vda. Ignored the loop a
 
 - Network Configuration → [View Notes — Rough Draft](/notes/expanded/arch_build/Arch_Network_Config.md)
 
-- Setting up KDE for the desktop environment → [View Notes — In progress](/notes/expanded/arch_build/Arch_Linux_KDE_Setup.md)
+- Setting up KDE for the desktop environment → [View Notes — Rough Draft](/notes/expanded/arch_build/Arch_Linux_KDE_Setup.md)
