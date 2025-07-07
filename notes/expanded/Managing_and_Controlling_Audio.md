@@ -1,12 +1,8 @@
 # Managing and Controlling Audio (Linux CLI)
 
----
+## Listing Audio Output Devices
 
-## 🎧 Listing Audio Output Devices
-
----
-
-To see all available audio output devices (called *sinks*), run:
+To see all available audio output devices (called sinks), run:
 
 ``` bash
 pactl list short sinks
