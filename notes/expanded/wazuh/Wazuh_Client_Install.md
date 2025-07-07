@@ -53,3 +53,11 @@ Confirm the service is running and working:
 ```bash
 sudo systemctl status wazuh-agent
 ```
+Check to see if auto-enable on boot is on:
+```bash
+sudo systemctl is-enabled wazuh-agent
+```
+If not, we can enable it:
+```bash
+sudo systemctl enable wazuh-agent
+```
