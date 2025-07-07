@@ -1,4 +1,4 @@
-# These are the instructions for a KDE Desktop Install Environment
+# Instructions for a KDE Desktop Install Environment
 
 For an easy copy and paste-like install for KDE, we can run:
 ```bash
