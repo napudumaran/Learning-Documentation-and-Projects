@@ -61,3 +61,16 @@ If not, we can enable it:
 ```bash
 sudo systemctl enable wazuh-agent
 ```
+To confirm that the client and manager are communicating, run this on our machine hosting Wuzah Manager:
+```bash
+sudo /var/ossec/bin/agent_control -l
+```
+
+If we see the 2 devices with our hostnames and the services as Active, we are good. This is what my output looks like:
+```bash
+Wazuh agent_control. List of available agents:
+   ID: 000, Name: napu-pc (server), IP: 127.0.0.1, Active/Local
+   ID: 001, Name: GhettoKali, IP: any, Active
+
+List of agentless devices:
+```
