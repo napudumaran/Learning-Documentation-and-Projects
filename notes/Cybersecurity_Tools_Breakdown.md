@@ -2,5 +2,5 @@ Full writeup on the tool `nmap`, its commands, and methodologies here → [Deepe
 
 Full writeup on the tool `ncat`, its commands, and methodologies here → [Deeper Breakdown](/notes/expanded/cyber_tools/NCAT_Writeup.md)
 
-Writeup on Wuzah Manager and Wuzah Client→ [Deeper Breakdown — In progress](/notes/expanded/cyber_tools/wazuh/Wazuh_How_To)
+Writeup on Wuzah Manager and Wuzah Client→ [Deeper Breakdown — In progress](/notes/expanded/cyber_tools/wazuh/Wazuh_Writeup.md)
 
