@@ -26,7 +26,7 @@ sudo makepkg -si
 ```
 Install the Wazuh Client:
 ```bash
-sudo yay -S wazuh-agent
+yay -S wazuh-agent
 ```
 Enable the Wuzah agent service:
 ```bash
