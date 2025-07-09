@@ -46,7 +46,7 @@ Connecting to a service lets you send data to open ports, letting you see banner
 ```bash
 ncat 127.0.0.1 22
 ```
-You can replace the IP with a different target, as well as a different protocol. This command targets the loopback address of our machine, as well as checks to see if port 22 is open. This would display a "banner" which looks like: `SSH-2.0-OpenSSH_10.0.` if port 22 is open. That banner is important since it gives valuable information about available services, and possibly if it's outdated and vulnerable. 
+You can replace the IP with a different target, as well as a different port. This command targets the loopback address of our machine, as well as checks to see if port 22 is open. This would display a "banner" which looks like: `SSH-2.0-OpenSSH_10.0.` if port 22 is open. That banner is important since it gives valuable information about available services, and possibly if it's outdated and vulnerable. 
 
 ---
 ### Listening for incoming connections
