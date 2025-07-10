@@ -3,41 +3,33 @@
 Welcome. I’m a cybersecurity student, PC technician, and father documenting my transition from Windows to Linux. My long-term goal is to build a custom, minimal version of Kali Linux as proof of intermediate-level mastery — with every decision explained and documented.
 
 ---
-
 ## Active Projects
 
-### Switching from Windows 11 to Pop!_OS
+- ### Switching from Windows 11 to Pop!_OS
 Replacing my daily driver OS with Pop!_OS to escape Windows dependency, improve my comfort in Linux, and get hands-on with a modern desktop Linux distro. <br>
 → [View Notes](notes/Windows-to-POP_OS.md)
 
-
 ---
-
-### Setting Up Virt-Manager on Pop!_OS
+- ### Setting Up Virt-Manager on Pop!_OS
 Configuring virt-manager and supporting tools to run virtual machines locally for testing, lab work, and OS experimentation. <br>
 → [View Notes](notes/Setting_Up_Virt_Manager.md)
 
 ---
-
-### Arch Linux Install (VM)
+- ### Arch Linux Install (VM)
 Manual Arch install and virt-manager configurations, including setting up UEFI support <br>
 → [View Notes — Rough Draft](/notes/Arch_Linux_Install.md)
 
 ---
-
-### Arch Linux Build
+- ### Arch Linux Build
 A How-To for manually setting up an Arch Linux configuration, with breakdowns of each step along the way <br>
 → [View Notes — Rough Draft](/notes/Arch_Linux_Build.md)
 
 ---
-
-### Cybersecurity Tools Breakdown
-
+- ### Cybersecurity Tools Breakdown
 Installation and walkthrough of various cybersecurity tools <br>
 → [In Progress](/notes/Cybersecurity_Tools_Breakdown.md)
 
 ---
-
 ## Why build my own Kali? 
 - I'll be able to know what every tool does and explain why I chose them and how I use them
 - It won't be bloated
