@@ -9,18 +9,18 @@ Made sure I was booted in UEFI mode by looking for /sys/firmware/efi. It was the
 Used lsblk to find my actual disk device → it was /dev/vda. Ignored the loop and rom devices since those are from the live ISO.
 
 ---
-- Partitioning for Boot, Root, and Home. <br>
+1. Partitioning for Boot, Root, and Home. <br>
 → [View Notes — Rough Draft](/notes/expanded/arch_build/Partitioning_Arch_Linux.md)
 ---
-- Installing the Base System <br>
+2. Installing the Base System <br>
 → [View Notes — Rough Draft](/notes/expanded/arch_build/Arch_Linux_Base.md)
 ---
-- Security Hardening <br>
+3. Security Hardening <br>
 → [View Notes — Rough Draft](/notes/Arch_Security_Hardening.md)
 ---
-- Network Configuration <br>
+4. Network Configuration <br>
 → [View Notes — Rough Draft](/notes/expanded/arch_build/Arch_Network_Config.md)
 ---
-- Setting up KDE for the desktop environment <br>
+5. Setting up KDE for the desktop environment <br>
 → [View Notes — Rough Draft](/notes/expanded/arch_build/Arch_Linux_KDE_Setup.md)
 ---
