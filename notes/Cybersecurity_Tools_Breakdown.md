@@ -5,5 +5,5 @@
   → [Deeper Breakdown](/notes/expanded/cyber_tools/NCAT_Writeup.md)
 
 - Set up Wazuh Manager and Wazuh Agent across separate Arch Linux VMs to simulate a basic SIEM environment. Configured iptables to log incoming Nmap scans, then validated that Wazuh could ingest and display the log events. Used this setup to understand how SIEMs detect recon activity and forward system-level events for triage. <br>
-  → [Deeper Breakdown — In progress](/notes/expanded/cyber_tools/Wazuh_Writeup.md)
+  → [Deeper Breakdown — Rough Draft](/notes/expanded/cyber_tools/Wazuh_Writeup.md)
 
